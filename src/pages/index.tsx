@@ -46,7 +46,6 @@ interface Quadrant {
   name: string;
 }
 
-
 interface Props {
   data: {
     allEntriesJson: {
@@ -58,7 +57,7 @@ interface Props {
     allRingsJson: {
       nodes: Ring[];
     };
-  }
+  };
 }
 
 const IndexPage = (props: Props) => {

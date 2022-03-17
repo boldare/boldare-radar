@@ -1,10 +1,10 @@
 /** @type {import('gatsby').GatsbyConfig} */
 module.exports = {
   siteMetadata: {
-    title: ``,
-    siteUrl: `https://www.yourdomain.tld`
+    title: "Boldare radar",
+    siteUrl: "https://radar.bodare.company"
   },
-  plugins: ["gatsby-plugin-sass", "gatsby-transformer-json", {
+  plugins: ["gatsby-transformer-json", {
     resolve: "gatsby-source-filesystem",
     options: {
       path: "./src/data/"
