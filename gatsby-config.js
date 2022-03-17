@@ -4,7 +4,12 @@ module.exports = {
     title: ``,
     siteUrl: `https://www.yourdomain.tld`
   },
-  plugins: ["gatsby-plugin-sass", {
+  plugins: ["gatsby-plugin-sass", "gatsby-transformer-json", {
+    resolve: "gatsby-source-filesystem",
+    options: {
+      path: "./src/data/"
+    }
+  }, {
     resolve: 'gatsby-plugin-manifest',
     options: {
       "icon": "src/images/icon.png"
