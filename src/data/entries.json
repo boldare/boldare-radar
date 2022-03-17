@@ -8,13 +8,6 @@
   },
   {
     "quadrant": 3,
-    "ring": 3,
-    "label": "AWS Data Pipeline",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 3,
     "ring": 0,
     "label": "AWS EMR",
     "active": true,
@@ -58,13 +51,6 @@
   },
   {
     "quadrant": 3,
-    "ring": 3,
-    "label": "Hadoop",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 3,
     "ring": 1,
     "label": "Presto",
     "active": true,
@@ -75,13 +61,6 @@
     "ring": 0,
     "label": "Spark",
     "link": "https://engineering.zalando.com/tags/apache-spark.html",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 3,
-    "ring": 3,
-    "label": "YARN",
     "active": true,
     "moved": 0
   },
@@ -101,13 +80,6 @@
   },
   {
     "quadrant": 2,
-    "ring": 3,
-    "label": "Aerospike",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
     "ring": 1,
     "label": "Amazon Redshift",
     "active": true,
@@ -118,20 +90,6 @@
     "ring": 0,
     "label": "Cassandra",
     "link": "https://engineering.zalando.com/tags/cassandra.html",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "Consul",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "CouchBase",
     "active": true,
     "moved": 0
   },
@@ -166,50 +124,8 @@
   },
   {
     "quadrant": 2,
-    "ring": 3,
-    "label": "HBase",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
     "ring": 1,
     "label": "HDFS",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "Hazelcast",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "Memcached",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "MongoDB",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "MySQL",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "Oracle DB",
     "active": true,
     "moved": 0
   },
@@ -233,20 +149,6 @@
     "quadrant": 2,
     "ring": 2,
     "label": "RocksDB",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "Solr",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 2,
-    "ring": 3,
-    "label": "ZooKeeper",
     "active": true,
     "moved": 0
   },
@@ -317,14 +219,6 @@
   },
   {
     "quadrant": 1,
-    "ring": 3,
-    "label": "STUPS",
-    "link": "https://engineering.zalando.com/tags/stups.html",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 1,
     "ring": 0,
     "label": "Skipper",
     "active": true,
@@ -346,14 +240,6 @@
   },
   {
     "quadrant": 0,
-    "ring": 3,
-    "label": "Clojure",
-    "link": "https://engineering.zalando.com/tags/clojure.html",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 0,
     "ring": 0,
     "label": "Go",
     "link": "https://engineering.zalando.com/tags/golang.html",
@@ -365,14 +251,6 @@
     "ring": 0,
     "label": "GraphQL",
     "link": "https://engineering.zalando.com/tags/graphql.html",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 0,
-    "ring": 3,
-    "label": "Haskell",
-    "link": "https://engineering.zalando.com/tags/haskell.html",
     "active": true,
     "moved": 0
   },
@@ -425,14 +303,6 @@
   },
   {
     "quadrant": 0,
-    "ring": 3,
-    "label": "Rust",
-    "link": "https://engineering.zalando.com/tags/rust.html",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 0,
     "ring": 0,
     "label": "Scala",
     "link": "https://engineering.zalando.com/tags/scala.html",
@@ -473,20 +343,6 @@
     "quadrant": 3,
     "ring": 0,
     "label": "AWS SQS",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 3,
-    "ring": 3,
-    "label": "ActiveMQ",
-    "active": true,
-    "moved": 0
-  },
-  {
-    "quadrant": 3,
-    "ring": 3,
-    "label": "HornetQ",
     "active": true,
     "moved": 0
   },

@@ -50,7 +50,6 @@ export function radar_visualization(config: any) {
     { radius: 130 },
     { radius: 220 },
     { radius: 310 },
-    { radius: 400 },
   ];
 
   const title_offset = { x: -675, y: -420 };
@@ -114,8 +113,8 @@ export function radar_visualization(config: any) {
       y: 15 * quadrants[quadrant].factor_y,
     };
     var cartesian_max = {
-      x: rings[3].radius * quadrants[quadrant].factor_x,
-      y: rings[3].radius * quadrants[quadrant].factor_y,
+      x: rings[2].radius * quadrants[quadrant].factor_x,
+      y: rings[2].radius * quadrants[quadrant].factor_y,
     };
     return {
       clipx: function (d: any) {
@@ -168,7 +167,7 @@ export function radar_visualization(config: any) {
   // assign unique sequential id to each entry
   var id = 1;
   for (var quadrant of [2, 3, 1, 0]) {
-    for (var ring = 0; ring < 4; ring++) {
+    for (var ring = 0; ring < 3; ring++) {
       var entries = segmented[quadrant][ring];
       entries.sort(function (a: any, b: any) {
         return a.label.localeCompare(b.label);
@@ -306,7 +305,7 @@ export function radar_visualization(config: any) {
         .text(config.quadrants[quadrant].name)
         .style("font-family", "Arial, Helvetica")
         .style("font-size", "18px");
-      for (var ring = 0; ring < 4; ring++) {
+      for (var ring = 0; ring < 3; ring++) {
         legend
           .append("text")
           .attr("transform", legend_transform(quadrant, ring))

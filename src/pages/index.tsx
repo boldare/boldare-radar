@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import { radar_visualization } from "../radar/visualization";
+import "./index.css";
 
 export const pageQuery = graphql`
   query {
@@ -75,7 +76,7 @@ const IndexPage = (props: Props) => {
         grid: "#bbb",
         inactive: "#ddd",
       },
-      title: "Zalando Tech Radar — 2022.01",
+      title: "Boldare Radar",
       quadrants,
       entries,
       rings,
