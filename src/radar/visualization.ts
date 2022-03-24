@@ -20,8 +20,24 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 import * as d3 from "d3";
+import { Entry, Quadrant, Ring } from "../models/radar";
 
-export function radar_visualization(config: any) {
+interface Config {
+  // TODO: add type
+  ref: any;
+  width: number;
+  height: number;
+  colors: Record<string, string>;
+  title: string;
+  quadrants: Quadrant[];
+  // TODO: fix type
+  entries: any[];
+  rings: Ring[];
+  print_layout: boolean;
+  zoomed_quadrant?: number;
+}
+
+export function radar_visualization(config: Config) {
   // custom random number generator, to make random sequence reproducible
   // source: https://stackoverflow.com/questions/521295
   var seed = 42;
