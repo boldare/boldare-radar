@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import * as React from "react";
 import { radar_visualization } from "../radar/visualization";
+import { Entry, Quadrant, Ring } from "../models/radar";
 import "./index.css";
 
 export const pageQuery = graphql`
@@ -29,23 +30,6 @@ export const pageQuery = graphql`
     }
   }
 `;
-
-interface Entry {
-  quadrant: number;
-  ring: number;
-  label: string;
-  active: boolean;
-  moved: number;
-}
-
-interface Ring {
-  name: string;
-  color: string;
-}
-
-interface Quadrant {
-  name: string;
-}
 
 interface Props {
   data: {
