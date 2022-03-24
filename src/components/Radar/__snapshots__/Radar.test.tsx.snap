@@ -1,0 +1,363 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Radar component renders correctly 1`] = `
+<body>
+  <div>
+    <svg
+      height="1000"
+      style="background-color: rgb(255, 255, 255);"
+      width="1450"
+    >
+      <g
+        transform="translate(725,500)"
+      >
+        <g>
+          <line
+            style="stroke: #bbb; stroke-width: 1;"
+            x1="0"
+            x2="0"
+            y1="-400"
+            y2="400"
+          />
+          <line
+            style="stroke: #bbb; stroke-width: 1;"
+            x1="-400"
+            x2="400"
+            y1="0"
+            y2="0"
+          />
+          <defs>
+            <filter
+              height="1"
+              id="solid"
+              width="1"
+              x="0"
+              y="0"
+            >
+              <feflood
+                flood-color="rgb(0, 0, 0, 0.8)"
+              />
+              <fecomposite
+                in="SourceGraphic"
+              />
+            </filter>
+          </defs>
+          <circle
+            cx="0"
+            cy="0"
+            r="130"
+            style="fill: none; stroke: #bbb; stroke-width: 1;"
+          />
+          <text
+            style="fill: #e5e5e5; font-family: Arial, Helvetica; font-size: 42px; font-weight: bold; pointer-events: none; user-select: none;"
+            text-anchor="middle"
+            y="-68"
+          >
+            ADOPT
+          </text>
+          <circle
+            cx="0"
+            cy="0"
+            r="220"
+            style="fill: none; stroke: #bbb; stroke-width: 1;"
+          />
+          <text
+            style="fill: #e5e5e5; font-family: Arial, Helvetica; font-size: 42px; font-weight: bold; pointer-events: none; user-select: none;"
+            text-anchor="middle"
+            y="-158"
+          >
+            TRIAL
+          </text>
+          <circle
+            cx="0"
+            cy="0"
+            r="310"
+            style="fill: none; stroke: #bbb; stroke-width: 1;"
+          />
+          <text
+            style="fill: #e5e5e5; font-family: Arial, Helvetica; font-size: 42px; font-weight: bold; pointer-events: none; user-select: none;"
+            text-anchor="middle"
+            y="-248"
+          >
+            ASSESS
+          </text>
+        </g>
+        <text
+          style="font-family: Arial, Helvetica; font-size: 34px;"
+          transform="translate(-675,-420)"
+        >
+          Boldare Radar
+        </text>
+        <text
+          space="preserve"
+          style="font-family: Arial, Helvetica; font-size: 10px;"
+          transform="translate(-675,420)"
+        >
+          ▲ moved up     ▼ moved down
+        </text>
+        <g>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 18px;"
+            transform="translate(450,45)"
+          >
+            Languages
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(450,74)"
+          >
+            ADOPT
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(450,110)"
+          >
+            TRIAL
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(570,74)"
+          >
+            ASSESS
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 18px;"
+            transform="translate(-675,45)"
+          >
+            Infrastructure
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-675,74)"
+          >
+            ADOPT
+          </text>
+          <a
+            href="#"
+          >
+            <text
+              class="legend10"
+              id="legendItem5"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(-675,90)"
+            >
+              5. Nginx
+            </text>
+          </a>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-675,122)"
+          >
+            TRIAL
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-555,74)"
+          >
+            ASSESS
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 18px;"
+            transform="translate(-675,-355)"
+          >
+            Datastores
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-675,-326)"
+          >
+            ADOPT
+          </text>
+          <a
+            href="#"
+          >
+            <text
+              class="legend20"
+              id="legendItem1"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(-675,-310)"
+            >
+              1. AWS DynamoDB
+            </text>
+          </a>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-675,-278)"
+          >
+            TRIAL
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-555,-326)"
+          >
+            ASSESS
+          </text>
+          <a
+            href="#"
+          >
+            <text
+              class="legend22"
+              id="legendItem2"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(-555,-310)"
+            >
+              2. Google Bigtable
+            </text>
+          </a>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 18px;"
+            transform="translate(450,-355)"
+          >
+            Data Management
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(450,-326)"
+          >
+            ADOPT
+          </text>
+          <a
+            href="#"
+          >
+            <text
+              class="legend30"
+              id="legendItem3"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(450,-310)"
+            >
+              3. Airflow
+            </text>
+          </a>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(450,-278)"
+          >
+            TRIAL
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(570,-326)"
+          >
+            ASSESS
+          </text>
+          <a
+            href="#"
+          >
+            <text
+              class="legend32"
+              id="legendItem4"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(570,-310)"
+            >
+              4. AWS Athena
+            </text>
+          </a>
+        </g>
+        <g
+          id="rink"
+        >
+          <g
+            class="blip"
+            transform="translate(570,-310)"
+          >
+            <circle
+              fill="#fbdb84"
+              r="9"
+            />
+            <text
+              style="fill: #fff; font-family: Arial, Helvetica; font-size: 9px; pointer-events: none; user-select: none;"
+              text-anchor="middle"
+              y="3"
+            >
+              4
+            </text>
+          </g>
+          <g
+            class="blip"
+            transform="translate(-555,-298)"
+          >
+            <circle
+              fill="#fbdb84"
+              r="9"
+            />
+            <text
+              style="fill: #fff; font-family: Arial, Helvetica; font-size: 9px; pointer-events: none; user-select: none;"
+              text-anchor="middle"
+              y="3"
+            >
+              2
+            </text>
+          </g>
+          <g
+            class="blip"
+            transform="translate(450,-286)"
+          >
+            <circle
+              fill="#93c47d"
+              r="9"
+            />
+            <text
+              style="fill: #fff; font-family: Arial, Helvetica; font-size: 9px; pointer-events: none; user-select: none;"
+              text-anchor="middle"
+              y="3"
+            >
+              3
+            </text>
+          </g>
+          <g
+            class="blip"
+            transform="translate(-675,-274)"
+          >
+            <circle
+              fill="#93c47d"
+              r="9"
+            />
+            <text
+              style="fill: #fff; font-family: Arial, Helvetica; font-size: 9px; pointer-events: none; user-select: none;"
+              text-anchor="middle"
+              y="3"
+            >
+              1
+            </text>
+          </g>
+          <g
+            class="blip"
+            transform="translate(-675,138)"
+          >
+            <circle
+              fill="#93c47d"
+              r="9"
+            />
+            <text
+              style="fill: #fff; font-family: Arial, Helvetica; font-size: 9px; pointer-events: none; user-select: none;"
+              text-anchor="middle"
+              y="3"
+            >
+              5
+            </text>
+          </g>
+        </g>
+        <g
+          id="bubble"
+          style="opacity: 0; pointer-events: none; user-select: none;"
+          x="0"
+          y="0"
+        >
+          <rect
+            rx="4"
+            ry="4"
+            style="fill: #333;"
+          />
+          <text
+            style="font-family: sans-serif; font-size: 10px; fill: #fff;"
+          />
+          <path
+            d="M 0,0 10,0 5,8 z"
+            style="fill: #333;"
+          />
+        </g>
+      </g>
+    </svg>
+  </div>
+</body>
+`;
