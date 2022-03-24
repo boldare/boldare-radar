@@ -62,13 +62,15 @@ interface Props {
 }
 
 const IndexPage = (props: Props) => {
+  const ref = React.useRef(null);
+
   const entries = props.data.allEntriesJson.nodes;
   const rings = props.data.allRingsJson.nodes;
   const quadrants = props.data.allQuadrantsJson.nodes;
 
   React.useEffect(() => {
     radar_visualization({
-      svg_id: "radar",
+      ref,
       width: 1450,
       height: 1000,
       colors: {
@@ -83,11 +85,11 @@ const IndexPage = (props: Props) => {
       print_layout: true,
       // zoomed_quadrant: 0,
     });
-  }, []);
+  }, [ref, entries, rings, quadrants]);
 
   return (
     <main>
-      <svg id="radar"></svg>
+      <svg ref={ref}></svg>
     </main>
   );
 };

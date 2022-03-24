@@ -192,7 +192,7 @@ export function radar_visualization(config: any) {
   }
 
   var svg = d3
-    .select("svg#" + config.svg_id)
+    .select(config.ref.current)
     .style("background-color", config.colors.background)
     .attr("width", config.width)
     .attr("height", config.height);
