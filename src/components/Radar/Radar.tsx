@@ -8,8 +8,29 @@ interface RadarProps {
   entries: Entry[];
 }
 
+const quadrantMap = {
+  Techniques: 0,
+  Tools: 1,
+  "Platforms & Services": 2,
+  Frameworks: 3,
+};
+
+const ringMap = {
+  Prototype: 0,
+  MVP: 1,
+  "PMF/Scaling": 2,
+};
+
 export function Radar({ quadrants, entries, rings }: RadarProps) {
   const ref = React.useRef(null);
+
+  const formattedEntries = React.useMemo(() => entries.map((entry) => {
+    return {
+      ...entry,
+      ring: ringMap[entry.ring],
+      quadrant: quadrantMap[entry.quadrant],
+    };
+  }), [entries])
 
   React.useEffect(() => {
     radar_visualization({
@@ -23,7 +44,7 @@ export function Radar({ quadrants, entries, rings }: RadarProps) {
       },
       title: "Boldare Radar",
       quadrants,
-      entries,
+      entries: formattedEntries,
       rings,
       print_layout: true,
       // zoomed_quadrant: 0,

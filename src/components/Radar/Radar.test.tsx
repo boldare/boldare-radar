@@ -1,13 +1,14 @@
 import * as React from "react";
 import { render } from "@testing-library/react";
 import { Radar } from "./Radar";
+import { Entry, Quadrant, Ring } from "../../models/radar";
 
 const quadrants = [
-  { name: "Languages" },
-  { name: "Infrastructure" },
-  { name: "Datastores" },
-  { name: "Data Management" },
-];
+  { name: "Techniques" },
+  { name: "Tools" },
+  { name: "Platforms & Services" },
+  { name: "Frameworks" },
+] as Quadrant[];
 
 const entries = [
   {
@@ -17,53 +18,53 @@ const entries = [
     index: 0,
     label: "AWS Athena",
     moved: 0,
-    quadrant: 3,
-    ring: 2,
+    quadrant: "Platforms & Services",
+    ring: "PMF/Scaling",
   },
   {
-    quadrant: 2,
-    ring: 2,
+    quadrant: "Platforms & Services",
+    ring: "PMF/Scaling",
     label: "Google Bigtable",
     active: true,
     moved: 0
   },
   {
-    quadrant: 3,
-    ring: 0,
+    quadrant: "Tools",
+    ring: "PMF/Scaling",
     label: "Airflow",
     active: true,
     moved: 0
   },
   {
-    quadrant: 2,
-    ring: 0,
+    quadrant: "Platforms & Services",
+    ring: "PMF/Scaling",
     label: "AWS DynamoDB",
     active: true,
     moved: 0
   },
   {
-    quadrant: 1,
-    ring: 0,
+    quadrant: "Tools",
+    ring: "PMF/Scaling",
     label: "Nginx",
     active: true,
     moved: 0,
   },
-];
+] as Entry[];
 
 const rings = [
   {
     color: "#93c47d",
-    name: "ADOPT",
+    name: "Prototype",
   },
   {
     color: "#93d2c2",
-    name: "TRIAL",
+    name: "MVP",
   },
   {
     color: "#fbdb84",
-    name: "ASSESS",
+    name: "PMF/Scaling",
   },
-];
+] as Ring[];
 
 describe("Radar component", () => {
   it("renders correctly", () => {

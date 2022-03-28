@@ -1,16 +1,20 @@
+type QuadrantName = "Techniques" | "Tools" | "Platforms & Services" | "Frameworks";
+
+type RingName = "Prototype" | "MVP" | "PMF/Scaling";
+
 export interface Entry {
-  quadrant: number;
-  ring: number;
+  quadrant: QuadrantName;
+  ring: RingName;
   label: string;
   active: boolean;
   moved: number;
 }
 
 export interface Ring {
-  name: string;
+  name: RingName;
   color: string;
 }
 
 export interface Quadrant {
-  name: string;
+  name: QuadrantName;
 }

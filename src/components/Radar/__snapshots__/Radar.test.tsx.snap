@@ -53,7 +53,7 @@ exports[`Radar component renders correctly 1`] = `
             text-anchor="middle"
             y="-68"
           >
-            ADOPT
+            Prototype
           </text>
           <circle
             cx="0"
@@ -66,7 +66,7 @@ exports[`Radar component renders correctly 1`] = `
             text-anchor="middle"
             y="-158"
           >
-            TRIAL
+            MVP
           </text>
           <circle
             cx="0"
@@ -79,7 +79,7 @@ exports[`Radar component renders correctly 1`] = `
             text-anchor="middle"
             y="-248"
           >
-            ASSESS
+            PMF/Scaling
           </text>
         </g>
         <text
@@ -100,98 +100,110 @@ exports[`Radar component renders correctly 1`] = `
             style="font-family: Arial, Helvetica; font-size: 18px;"
             transform="translate(450,45)"
           >
-            Languages
+            Techniques
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(450,74)"
           >
-            ADOPT
+            Prototype
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(450,110)"
           >
-            TRIAL
+            MVP
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(570,74)"
           >
-            ASSESS
+            PMF/Scaling
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 18px;"
             transform="translate(-675,45)"
           >
-            Infrastructure
+            Tools
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(-675,74)"
           >
-            ADOPT
+            Prototype
           </text>
-          <a
-            href="#"
-          >
-            <text
-              class="legend10"
-              id="legendItem5"
-              style="font-family: Arial, Helvetica; font-size: 11px;"
-              transform="translate(-675,90)"
-            >
-              5. Nginx
-            </text>
-          </a>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
-            transform="translate(-675,122)"
+            transform="translate(-675,110)"
           >
-            TRIAL
+            MVP
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(-555,74)"
           >
-            ASSESS
-          </text>
-          <text
-            style="font-family: Arial, Helvetica; font-size: 18px;"
-            transform="translate(-675,-355)"
-          >
-            Datastores
-          </text>
-          <text
-            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
-            transform="translate(-675,-326)"
-          >
-            ADOPT
+            PMF/Scaling
           </text>
           <a
             href="#"
           >
             <text
-              class="legend20"
-              id="legendItem1"
+              class="legend12"
+              id="legendItem4"
               style="font-family: Arial, Helvetica; font-size: 11px;"
-              transform="translate(-675,-310)"
+              transform="translate(-555,90)"
             >
-              1. AWS DynamoDB
+              4. Airflow
+            </text>
+          </a>
+          <a
+            href="#"
+          >
+            <text
+              class="legend12"
+              id="legendItem5"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(-555,102)"
+            >
+              5. Nginx
             </text>
           </a>
           <text
-            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
-            transform="translate(-675,-278)"
+            style="font-family: Arial, Helvetica; font-size: 18px;"
+            transform="translate(-675,-355)"
           >
-            TRIAL
+            Platforms & Services
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-675,-326)"
+          >
+            Prototype
+          </text>
+          <text
+            style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
+            transform="translate(-675,-290)"
+          >
+            MVP
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(-555,-326)"
           >
-            ASSESS
+            PMF/Scaling
           </text>
+          <a
+            href="#"
+          >
+            <text
+              class="legend22"
+              id="legendItem1"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(-555,-310)"
+            >
+              1. AWS Athena
+            </text>
+          </a>
           <a
             href="#"
           >
@@ -199,66 +211,54 @@ exports[`Radar component renders correctly 1`] = `
               class="legend22"
               id="legendItem2"
               style="font-family: Arial, Helvetica; font-size: 11px;"
-              transform="translate(-555,-310)"
+              transform="translate(-555,-298)"
             >
-              2. Google Bigtable
+              2. AWS DynamoDB
+            </text>
+          </a>
+          <a
+            href="#"
+          >
+            <text
+              class="legend22"
+              id="legendItem3"
+              style="font-family: Arial, Helvetica; font-size: 11px;"
+              transform="translate(-555,-286)"
+            >
+              3. Google Bigtable
             </text>
           </a>
           <text
             style="font-family: Arial, Helvetica; font-size: 18px;"
             transform="translate(450,-355)"
           >
-            Data Management
+            Frameworks
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(450,-326)"
           >
-            ADOPT
+            Prototype
           </text>
-          <a
-            href="#"
-          >
-            <text
-              class="legend30"
-              id="legendItem3"
-              style="font-family: Arial, Helvetica; font-size: 11px;"
-              transform="translate(450,-310)"
-            >
-              3. Airflow
-            </text>
-          </a>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
-            transform="translate(450,-278)"
+            transform="translate(450,-290)"
           >
-            TRIAL
+            MVP
           </text>
           <text
             style="font-family: Arial, Helvetica; font-size: 12px; font-weight: bold;"
             transform="translate(570,-326)"
           >
-            ASSESS
+            PMF/Scaling
           </text>
-          <a
-            href="#"
-          >
-            <text
-              class="legend32"
-              id="legendItem4"
-              style="font-family: Arial, Helvetica; font-size: 11px;"
-              transform="translate(570,-310)"
-            >
-              4. AWS Athena
-            </text>
-          </a>
         </g>
         <g
           id="rink"
         >
           <g
             class="blip"
-            transform="translate(570,-310)"
+            transform="translate(-555,-310)"
           >
             <circle
               fill="#fbdb84"
@@ -269,7 +269,7 @@ exports[`Radar component renders correctly 1`] = `
               text-anchor="middle"
               y="3"
             >
-              4
+              1
             </text>
           </g>
           <g
@@ -285,31 +285,15 @@ exports[`Radar component renders correctly 1`] = `
               text-anchor="middle"
               y="3"
             >
-              2
-            </text>
-          </g>
-          <g
-            class="blip"
-            transform="translate(450,-286)"
-          >
-            <circle
-              fill="#93c47d"
-              r="9"
-            />
-            <text
-              style="fill: #fff; font-family: Arial, Helvetica; font-size: 9px; pointer-events: none; user-select: none;"
-              text-anchor="middle"
-              y="3"
-            >
               3
             </text>
           </g>
           <g
             class="blip"
-            transform="translate(-675,-274)"
+            transform="translate(-555,114)"
           >
             <circle
-              fill="#93c47d"
+              fill="#fbdb84"
               r="9"
             />
             <text
@@ -317,15 +301,31 @@ exports[`Radar component renders correctly 1`] = `
               text-anchor="middle"
               y="3"
             >
-              1
+              4
             </text>
           </g>
           <g
             class="blip"
-            transform="translate(-675,138)"
+            transform="translate(-555,-274)"
           >
             <circle
-              fill="#93c47d"
+              fill="#fbdb84"
+              r="9"
+            />
+            <text
+              style="fill: #fff; font-family: Arial, Helvetica; font-size: 9px; pointer-events: none; user-select: none;"
+              text-anchor="middle"
+              y="3"
+            >
+              2
+            </text>
+          </g>
+          <g
+            class="blip"
+            transform="translate(-555,138)"
+          >
+            <circle
+              fill="#fbdb84"
               r="9"
             />
             <text

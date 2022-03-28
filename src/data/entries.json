@@ -1,7 +1,7 @@
 [
   {
-    "quadrant": 2,
-    "ring": 0,
+    "quadrant": "Techniques",
+    "ring": "Prototype",
     "label": "HTML over the wire",
     "active": true,
     "moved": 0

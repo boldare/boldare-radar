@@ -3,19 +3,6 @@ const { readFile, writeFile } = require("fs/promises");
 
 const entriesFilePath = path.join(__dirname, "../data", "entries.json");
 
-const quadrantMap = {
-  Techniques: 0,
-  Tools: 1,
-  "Platforms & Services": 2,
-  Frameworks: 3,
-};
-
-const ringMap = {
-  Prototype: 0,
-  MVP: 1,
-  "PMF/Scaling": 2,
-};
-
 async function main({ label, ring, quadrant }) {
   const entriesFile = await readFile(entriesFilePath);
 
@@ -23,11 +10,10 @@ async function main({ label, ring, quadrant }) {
 
   // TODO: validate quadrant
   // TODO: validate ring
-  // TODO: validate label is unique
 
   const newEntry = {
-    quadrant: quadrantMap[quadrant],
-    ring: ringMap[ring],
+    quadrant: quadrant,
+    ring ,
     label,
     active: true,
     moved: 0,
