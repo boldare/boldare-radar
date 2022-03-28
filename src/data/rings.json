@@ -1,5 +1,5 @@
 [
-  { "name": "ADOPT", "color": "#93c47d" },
-  { "name": "TRIAL", "color": "#93d2c2" },
-  { "name": "ASSESS", "color": "#fbdb84" }
+  { "name": "Prototype", "color": "#93c47d" },
+  { "name": "MVP", "color": "#93d2c2" },
+  { "name": "PMF/Scaling", "color": "#fbdb84" }
 ]
