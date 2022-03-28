@@ -113,7 +113,7 @@
   },
   {
     "quadrant": "Techniques",
-    "ring": "MVP",
+    "ring": "PMF/Scaling",
     "label": "Reactive Programming",
     "active": true,
     "moved": 0
@@ -161,7 +161,7 @@
     "moved": 0
   },
   {
-    "quadrant": "Tools",
+    "quadrant": "Frameworks",
     "ring": "MVP",
     "label": "Expo",
     "active": true,
@@ -241,6 +241,195 @@
     "quadrant": "Platforms & Services",
     "ring": "MVP",
     "label": "Firebase Functions",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "DDD",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "TDD",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "CQRS",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "ADR",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "GraphQL",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "BDD",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "Event-Driven Architecture",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "Microservices Architecture",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "Microfrontends",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "Event Sourcing",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "E2E tests",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "SSR",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "Feature Flags",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "PMF/Scaling",
+    "label": "Infrastructure as Code",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "PMF/Scaling",
+    "label": "Amazon DocumentDB",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "PMF/Scaling",
+    "label": "Datadog",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "PMF/Scaling",
+    "label": "MongoDB Atlas",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "PMF/Scaling",
+    "label": "Amazon Aurora",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "RabbitMQ",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "Apache Kafka",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "NATS",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "Kubernetes",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "Terraform",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "Helm",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "MongoDB",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "Elasticsearch",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "PMF/Scaling",
+    "label": "MariaDB",
     "active": true,
     "moved": 0
   }
