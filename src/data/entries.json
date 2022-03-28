@@ -47,5 +47,201 @@
     "label": "Invision",
     "active": true,
     "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "PWA",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Modular monolith",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Model C4",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Monorepo",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "SPA",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Integration tests",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Serverless",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Event Storming",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Event Modeling",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "MVP",
+    "label": "Reactive Programming",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "MVP",
+    "label": "Docker",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "MVP",
+    "label": "Nginx",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "MVP",
+    "label": "Fastlane",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "MVP",
+    "label": "Lighthouse",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "MVP",
+    "label": "PostgreSQL",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "MVP",
+    "label": "Redis",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "MVP",
+    "label": "Expo",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Frameworks",
+    "ring": "MVP",
+    "label": "Netlify CMS",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Frameworks",
+    "ring": "MVP",
+    "label": "Strapi",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "Amazon S3",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "AWS Dynamodb",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "AWS Cognito",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "AWS Lambda",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "AWS SQS",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "AWS RDS",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "Auth0",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "Firebase Firestore",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "MVP",
+    "label": "Firebase Functions",
+    "active": true,
+    "moved": 0
   }
 ]
