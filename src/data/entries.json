@@ -5,5 +5,47 @@
     "label": "HTML over the wire",
     "active": true,
     "moved": 0
+  },
+  {
+    "quadrant": "Techniques",
+    "ring": "Prototype",
+    "label": "Low-code / no-code",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "Prototype",
+    "label": "Netlify",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "Prototype",
+    "label": "Firebase",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "Prototype",
+    "label": "Retool",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Platforms & Services",
+    "ring": "Prototype",
+    "label": "Stripe",
+    "active": true,
+    "moved": 0
+  },
+  {
+    "quadrant": "Tools",
+    "ring": "Prototype",
+    "label": "Invision",
+    "active": true,
+    "moved": 0
   }
 ]

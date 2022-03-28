@@ -9,10 +9,10 @@ interface RadarProps {
 }
 
 const quadrantMap = {
-  Techniques: 0,
-  Tools: 1,
-  "Platforms & Services": 2,
-  Frameworks: 3,
+  Frameworks: 0,
+  "Platforms & Services": 1,
+  Techniques: 2,
+  Tools: 3,
 };
 
 const ringMap = {
