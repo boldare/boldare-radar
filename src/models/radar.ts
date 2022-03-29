@@ -1,4 +1,8 @@
-type QuadrantName = "Techniques" | "Tools" | "Platforms & Services" | "Frameworks";
+type QuadrantName =
+  | "Techniques"
+  | "Tools"
+  | "Platforms & Services"
+  | "Frameworks";
 
 type RingName = "Prototype" | "MVP" | "PMF/Scaling";
 

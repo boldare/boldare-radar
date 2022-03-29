@@ -26,21 +26,21 @@ const entries = [
     ring: "PMF/Scaling",
     label: "Google Bigtable",
     active: true,
-    moved: 0
+    moved: 0,
   },
   {
     quadrant: "Tools",
     ring: "PMF/Scaling",
     label: "Airflow",
     active: true,
-    moved: 0
+    moved: 0,
   },
   {
     quadrant: "Platforms & Services",
     ring: "PMF/Scaling",
     label: "AWS DynamoDB",
     active: true,
-    moved: 0
+    moved: 0,
   },
   {
     quadrant: "Tools",
