@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const path = require("path");
 const { readFile, writeFile } = require("fs/promises");
 
@@ -13,7 +14,7 @@ async function main({ label, ring, quadrant }) {
 
   const newEntry = {
     quadrant: quadrant,
-    ring ,
+    ring,
     label,
     active: true,
     moved: 0,
