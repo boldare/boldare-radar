@@ -62,11 +62,7 @@ export function radar_visualization(config: Config) {
     { radial_min: -0.5, radial_max: 0, factor_x: 1, factor_y: -1 },
   ];
 
-  const rings = [
-    { radius: 130 },
-    { radius: 220 },
-    { radius: 310 },
-  ];
+  const rings = [{ radius: 130 }, { radius: 220 }, { radius: 310 }];
 
   const title_offset = { x: -675, y: -420 };
 

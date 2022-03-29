@@ -1,6 +1,6 @@
 import * as React from "react";
 import { Entry, Quadrant, Ring } from "../../models/radar";
-import { radar_visualization } from "../../radar/visualization"
+import { radar_visualization } from "../../radar/visualization";
 
 interface RadarProps {
   quadrants: Quadrant[];
@@ -24,13 +24,17 @@ const ringMap = {
 export function Radar({ quadrants, entries, rings }: RadarProps) {
   const ref = React.useRef(null);
 
-  const formattedEntries = React.useMemo(() => entries.map((entry) => {
-    return {
-      ...entry,
-      ring: ringMap[entry.ring],
-      quadrant: quadrantMap[entry.quadrant],
-    };
-  }), [entries])
+  const formattedEntries = React.useMemo(
+    () =>
+      entries.map((entry) => {
+        return {
+          ...entry,
+          ring: ringMap[entry.ring],
+          quadrant: quadrantMap[entry.quadrant],
+        };
+      }),
+    [entries]
+  );
 
   React.useEffect(() => {
     radar_visualization({
@@ -51,7 +55,5 @@ export function Radar({ quadrants, entries, rings }: RadarProps) {
     });
   }, [ref, entries, rings, quadrants]);
 
-  return (
-    <svg ref={ref} />
-  )
+  return <svg ref={ref} />;
 }
