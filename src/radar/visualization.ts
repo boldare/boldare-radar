@@ -1,3 +1,5 @@
+/* eslint-disable no-prototype-builtins */
+/* eslint-disable no-var */
 // The MIT License (MIT)
 
 // Copyright (c) 2017 Zalando SE
@@ -20,7 +22,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 import * as d3 from "d3";
-import { Entry, Quadrant, Ring } from "../models/radar";
+import { Quadrant, Ring } from "../models/radar";
 
 interface Config {
   // TODO: add type
