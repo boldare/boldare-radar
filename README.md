@@ -16,6 +16,14 @@ Run app in development mode
 yarn develop
 ```
 
+## How to build the production version?
+
+Run build command
+
+```bash
+yarn build
+```
+
 ## How to run automated tests?
 
 Run unit tests
