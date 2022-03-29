@@ -37,3 +37,8 @@ jobs:
         run: |
           pip install awscli
           scripts/deploy.sh
+        env:
+          AWS_ACCESS_KEY_ID: AKIAQVHPCUKK4BDM2QZG
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_PROD }}
+          FRONTEND_BUCKET_NAME: boldare-tech-radar-prod
+          FRONTEND_CLOUDFRONT_ID: E29BK68I2GDH0Z
