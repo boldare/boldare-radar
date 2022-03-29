@@ -6,6 +6,10 @@ on:
     paths:
       - "**"
       - "!**.md"
+  pull_request:
+    paths:
+      - "**"
+      - "!**.md"
 
 jobs:
   ci_cd:
@@ -28,6 +32,7 @@ jobs:
         id: build
         run: yarn build
       - name: Deploy prod
+        if: github.ref == 'refs/heads/main'
         id: deploy-prod
         run: |
           pip install awscli
