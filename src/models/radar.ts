@@ -12,6 +12,7 @@ export interface Entry {
   label: string;
   active: boolean;
   moved: number;
+  links?: string[];
 }
 
 export interface Ring {

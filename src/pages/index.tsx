@@ -25,6 +25,22 @@ const IndexPage = () => {
         onRequestClose={closeModal}
       >
         <h1>{selectedEntry?.label}</h1>
+        {selectedEntry?.links ? (
+          <div>
+            <h2>Links</h2>
+            <div>
+              <ul>
+                {selectedEntry.links.map((link) => (
+                  <li key={link}>
+                    <a href={link} target="_blank" rel="noreferrer">
+                      {link}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        ) : null}
         <div>
           <a
             href="https://github.com/boldare/boldare-radar/issues/new"
