@@ -66,6 +66,7 @@
     "quadrant": "Techniques",
     "ring": "MVP",
     "label": "Model C4",
+    "links": ["https://c4model.com/"],
     "active": true,
     "moved": 0
   },
