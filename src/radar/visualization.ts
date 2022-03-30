@@ -37,6 +37,7 @@ interface Config {
   rings: Ring[];
   print_layout: boolean;
   zoomed_quadrant?: number;
+  handleEntryClick: (entry: any) => void;
 }
 
 export function radar_visualization(config: Config) {
@@ -348,6 +349,9 @@ export function radar_visualization(config: Config) {
           })
           .style("font-family", "Arial, Helvetica")
           .style("font-size", "11px")
+          .on("click", (e) => {
+            config.handleEntryClick(e);
+          })
           .on("mouseover", function (d) {
             showBubble(d);
             highlightLegendItem(d);
