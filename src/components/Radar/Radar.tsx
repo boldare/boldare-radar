@@ -6,6 +6,7 @@ interface RadarProps {
   quadrants: Quadrant[];
   rings: Ring[];
   entries: Entry[];
+  handleEntryClick: (entry: Entry) => void;
 }
 
 const quadrantMap = {
@@ -21,7 +22,12 @@ const ringMap = {
   "PMF/Scaling": 2,
 };
 
-export function Radar({ quadrants, entries, rings }: RadarProps) {
+export function Radar({
+  quadrants,
+  entries,
+  rings,
+  handleEntryClick,
+}: RadarProps) {
   const ref = React.useRef(null);
 
   const formattedEntries = React.useMemo(
@@ -51,6 +57,7 @@ export function Radar({ quadrants, entries, rings }: RadarProps) {
       entries: formattedEntries,
       rings,
       print_layout: true,
+      handleEntryClick,
       // zoomed_quadrant: 0,
     });
   }, [ref, entries, rings, quadrants]);
