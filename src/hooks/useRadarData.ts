@@ -35,6 +35,7 @@ export const LocalDataQuery = graphql`
         label
         moved
         active
+        links
       }
     }
   }
