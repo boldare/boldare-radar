@@ -25,6 +25,22 @@ const IndexPage = () => {
         onRequestClose={closeModal}
       >
         <h1>{selectedEntry?.label}</h1>
+        {selectedEntry?.comments ? (
+          <div>
+            {selectedEntry.comments.map((comment) => (
+              <div key={comment.content}>
+                <p>{comment.content}</p>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  Author{" "}
+                  <img
+                    style={{ width: 24, height: 24, borderRadius: 100 }}
+                    src={`https://github.com/${comment.author}.png?size=40`}
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        ) : null}
         {selectedEntry?.links ? (
           <div>
             <h2>Links</h2>
@@ -41,6 +57,7 @@ const IndexPage = () => {
             </div>
           </div>
         ) : null}
+        <hr />
         <div>
           <a
             href="https://github.com/boldare/boldare-radar/issues/new"

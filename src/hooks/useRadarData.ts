@@ -36,6 +36,10 @@ export const LocalDataQuery = graphql`
         moved
         active
         links
+        comments {
+          author
+          content
+        }
       }
     }
   }
