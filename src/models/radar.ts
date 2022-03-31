@@ -6,6 +6,11 @@ type QuadrantName =
 
 type RingName = "Prototype" | "MVP" | "PMF/Scaling";
 
+interface Comment {
+  author: string;
+  content: string;
+}
+
 export interface Entry {
   quadrant: QuadrantName;
   ring: RingName;
@@ -13,6 +18,7 @@ export interface Entry {
   active: boolean;
   moved: number;
   links?: string[];
+  comments?: Comment[];
 }
 
 export interface Ring {
