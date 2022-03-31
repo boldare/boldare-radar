@@ -69,7 +69,12 @@ const rings = [
 describe("Radar component", () => {
   it("renders correctly", () => {
     const { baseElement } = render(
-      <Radar entries={entries} rings={rings} quadrants={quadrants} />
+      <Radar
+        handleEntryClick={jest.fn()}
+        entries={entries}
+        rings={rings}
+        quadrants={quadrants}
+      />
     );
 
     expect(baseElement).toMatchSnapshot();
