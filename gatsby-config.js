@@ -7,6 +7,12 @@ module.exports = {
   plugins: [
     "gatsby-transformer-json",
     {
+      resolve: "gatsby-plugin-csp",
+      directives: {
+        "script-src": "'self' accounts.google.com",
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         path: "./src/data/",
