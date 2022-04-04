@@ -2,6 +2,7 @@ import * as React from "react";
 import Modal from "react-modal";
 import { Radar } from "../components/Radar";
 import { useRadarData } from "../hooks/useRadarData";
+import { useGoogleAuth } from "../hooks/useGoogleAuth";
 import { Entry } from "../models/radar";
 import "./index.css";
 
@@ -9,11 +10,21 @@ const IndexPage = () => {
   const { quadrants, entries, rings } = useRadarData();
   const [selectedEntry, setSelectedEntry] = React.useState<Entry | null>(null);
 
+  const handleEntryClick = React.useCallback(setSelectedEntry, []);
+
+  const { logged } = useGoogleAuth({ buttonElementId: "googleLoginElement" });
+
+  if (!logged) {
+    return (
+      <main>
+        <div id="googleLoginElement"></div>
+      </main>
+    );
+  }
+
   function closeModal() {
     setSelectedEntry(null);
   }
-
-  const handleEntryClick = React.useCallback(setSelectedEntry, []);
 
   const isModalOpen = Boolean(selectedEntry);
 
