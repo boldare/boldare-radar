@@ -2540,6 +2540,11 @@
     "@types/minimatch" "*"
     "@types/node" "*"
 
+"@types/google-one-tap@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@types/google-one-tap/-/google-one-tap-1.1.0.tgz#dea471b1c532ae661378d2ac2e5976dd7005ca5e"
+  integrity sha512-UZmwGJ+HhcKGAyc53mKY1Ybs7EgiO2HwYrFlf1F+KiI1vt/O60HroSM+7Vk/xYkTtutjid3WCE0kbmhNqPg1zg==
+
 "@types/graceful-fs@^4.1.2":
   version "4.1.5"
   resolved "https://registry.yarnpkg.com/@types/graceful-fs/-/graceful-fs-4.1.5.tgz#21ffba0d98da4350db64891f92a9e5db3cdb4e15"
