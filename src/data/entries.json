@@ -116,6 +116,12 @@
     "quadrant": "Techniques",
     "ring": "MVP",
     "label": "Event Storming",
+    "links": [
+      "https://github.com/mariuszgil/awesome-eventstorming",
+      "https://www.youtube.com/c/MariuszGil",
+      "https://www.youtube.com/watch?v=dhoXYRqghws",
+      "https://mrpicky.dev/this-could-be-the-biggest-post-about-big-picture-event-storming-ever-and-with-examples/"
+    ],
     "active": true,
     "moved": 0
   },
