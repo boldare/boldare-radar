@@ -4,6 +4,7 @@ import { Radar } from "../components/Radar";
 import { useRadarData } from "../hooks/useRadarData";
 import { useGoogleAuth } from "../hooks/useGoogleAuth";
 import { Entry } from "../models/radar";
+import { Login } from "../components/Login";
 import "./index.css";
 
 const IndexPage = () => {
@@ -15,11 +16,7 @@ const IndexPage = () => {
   const { logged } = useGoogleAuth({ buttonElementId: "googleLoginElement" });
 
   if (!logged) {
-    return (
-      <main>
-        <div id="googleLoginElement"></div>
-      </main>
-    );
+    return <Login />;
   }
 
   function closeModal() {
