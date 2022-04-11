@@ -115,6 +115,7 @@ exports[`Radar component renders correctly 1`] = `
               class="legend00"
               id="legendItem6"
               style="font-family: Arial, Helvetica; font-size: 11px;"
+              text-decoration="none"
               transform="translate(450,90)"
             >
               6. Next.js
@@ -163,6 +164,7 @@ exports[`Radar component renders correctly 1`] = `
               class="legend12"
               id="legendItem3"
               style="font-family: Arial, Helvetica; font-size: 11px;"
+              text-decoration="none"
               transform="translate(-555,90)"
             >
               3. AWS Athena
@@ -175,6 +177,7 @@ exports[`Radar component renders correctly 1`] = `
               class="legend12"
               id="legendItem4"
               style="font-family: Arial, Helvetica; font-size: 11px;"
+              text-decoration="none"
               transform="translate(-555,102)"
             >
               4. AWS DynamoDB
@@ -187,6 +190,7 @@ exports[`Radar component renders correctly 1`] = `
               class="legend12"
               id="legendItem5"
               style="font-family: Arial, Helvetica; font-size: 11px;"
+              text-decoration="none"
               transform="translate(-555,114)"
             >
               5. Google Bigtable
@@ -241,6 +245,7 @@ exports[`Radar component renders correctly 1`] = `
               class="legend31"
               id="legendItem1"
               style="font-family: Arial, Helvetica; font-size: 11px;"
+              text-decoration="none"
               transform="translate(450,-274)"
             >
               1. Nginx
@@ -259,6 +264,7 @@ exports[`Radar component renders correctly 1`] = `
               class="legend32"
               id="legendItem2"
               style="font-family: Arial, Helvetica; font-size: 11px;"
+              text-decoration="none"
               transform="translate(570,-310)"
             >
               2. Airflow

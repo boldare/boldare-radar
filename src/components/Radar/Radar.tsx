@@ -29,6 +29,7 @@ export function Radar({
   handleEntryClick,
 }: RadarProps) {
   const ref = React.useRef(null);
+  const radarRendered = React.useRef(false);
 
   const formattedEntries = React.useMemo(
     () =>
@@ -43,6 +44,10 @@ export function Radar({
   );
 
   React.useEffect(() => {
+    if (radarRendered.current) {
+      return;
+    }
+
     radar_visualization({
       ref,
       width: 1450,
@@ -60,7 +65,9 @@ export function Radar({
       handleEntryClick,
       // zoomed_quadrant: 0,
     });
-  }, [ref, entries, rings, quadrants]);
+
+    radarRendered.current = true;
+  }, [ref, radarRendered, entries, rings, quadrants]);
 
   return <svg ref={ref} />;
 }
