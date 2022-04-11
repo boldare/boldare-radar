@@ -34,4 +34,4 @@ yarn test
 
 ## How to update the data?
 
-Add new entry or edit existing entry in `data/entries.json`
+Edit or add new file in `src/data` folder.
