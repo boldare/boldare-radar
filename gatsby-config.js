@@ -15,21 +15,21 @@ module.exports = {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "prototype",
-        path: `${__dirname}/src/data/prototype`,
+        path: `${__dirname}/data/prototype`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "mvp",
-        path: `${__dirname}/src/data/mvp`,
+        path: `${__dirname}/data/mvp`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "scaleup",
-        path: `${__dirname}/src/data/scaleup`,
+        path: `${__dirname}/data/scaleup`,
       },
     },
     "gatsby-transformer-remark",
