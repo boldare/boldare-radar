@@ -8,6 +8,10 @@ import { Login } from "../components/Login";
 import { Layout } from "../components/Layout";
 import "./index.css";
 
+const isDev = () => {
+  return process.env.NODE_ENV === "development";
+};
+
 const IndexPage = () => {
   const { quadrants, entries, rings } = useRadarData();
   const [selectedEntry, setSelectedEntry] = React.useState<Entry | null>(null);
@@ -16,7 +20,7 @@ const IndexPage = () => {
 
   const { logged } = useGoogleAuth({ buttonElementId: "googleLoginElement" });
 
-  if (!logged) {
+  if (!logged && !isDev()) {
     return (
       <Layout>
         <Login />
