@@ -2,7 +2,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import { Entry, Quadrant, QuadrantName, Ring, RingName } from "../models/radar";
 
 interface LocalDataNode {
-  id: string;
+  slug: string;
   details: {
     meta: {
       category: QuadrantName;
@@ -20,7 +20,7 @@ interface LocalDataQueryData {
 export const LocalDataQuery = graphql`
   fragment Entry on FileConnection {
     nodes {
-      id: name
+      slug: name
       details: childMarkdownRemark {
         meta: frontmatter {
           category
@@ -51,6 +51,7 @@ interface UseRadarData {
 
 function mapNodeToEntry(ring: RingName, node: LocalDataNode): Entry {
   return {
+    slug: node.slug,
     label: node.details.meta.name,
     quadrant: node.details.meta.category,
     ring,
@@ -62,7 +63,6 @@ function mapNodeToEntry(ring: RingName, node: LocalDataNode): Entry {
 export function useRadarData(): UseRadarData {
   const data = useStaticQuery<LocalDataQueryData>(LocalDataQuery);
 
-  console.log(data);
   const prototypeEntries = data.prototype.nodes.map((node) =>
     mapNodeToEntry("Prototype", node)
   );

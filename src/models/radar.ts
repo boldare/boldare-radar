@@ -12,6 +12,7 @@ interface Comment {
 }
 
 export interface Entry {
+  slug: string;
   quadrant: QuadrantName;
   ring: RingName;
   label: string;

@@ -1,4 +1,5 @@
 import * as React from "react";
+import { navigate } from "gatsby";
 import Modal from "react-modal";
 import { Radar } from "../components/Radar";
 import { useRadarData } from "../hooks/useRadarData";
@@ -11,7 +12,9 @@ const IndexPage = () => {
   const { quadrants, entries, rings } = useRadarData();
   const [selectedEntry, setSelectedEntry] = React.useState<Entry | null>(null);
 
-  const handleEntryClick = React.useCallback(setSelectedEntry, []);
+  const handleEntryClick = React.useCallback((entry: Entry) => {
+    navigate(`/${entry.slug}`);
+  }, []);
 
   const { logged } = useGoogleAuth({ buttonElementId: "googleLoginElement" });
 
