@@ -1,0 +1,4 @@
+---
+name: "CQRS"
+category: "Techniques"
+---
