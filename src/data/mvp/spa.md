@@ -1,0 +1,4 @@
+---
+name: "SPA"
+category: "Techniques"
+---

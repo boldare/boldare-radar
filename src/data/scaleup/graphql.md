@@ -1,0 +1,4 @@
+---
+name: "GraphQL"
+category: "Techniques"
+---

@@ -19,7 +19,7 @@ const quadrantMap = {
 const ringMap = {
   Prototype: 0,
   MVP: 1,
-  "PMF/Scaling": 2,
+  Scaleup: 2,
 };
 
 export function Radar({
