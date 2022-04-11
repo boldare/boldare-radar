@@ -340,6 +340,9 @@ export function radar_visualization(config: Config) {
           .attr("transform", function (d, i: any) {
             return legend_transform(quadrant, ring, i);
           })
+          .attr("text-decoration", (d: any) => {
+            return d.html ? "underline" : "none";
+          })
           .attr("class", "legend" + quadrant + ring)
           .attr("id", function (d: any, i) {
             return "legendItem" + d.id;
