@@ -1,11 +1,11 @@
 import * as React from "react";
-import { navigate } from "gatsby";
 import Modal from "react-modal";
 import { Radar } from "../components/Radar";
 import { useRadarData } from "../hooks/useRadarData";
 import { useGoogleAuth } from "../hooks/useGoogleAuth";
 import { Entry } from "../models/radar";
 import { Login } from "../components/Login";
+import { Layout } from "../components/Layout";
 import "./index.css";
 
 const IndexPage = () => {
@@ -17,7 +17,11 @@ const IndexPage = () => {
   const { logged } = useGoogleAuth({ buttonElementId: "googleLoginElement" });
 
   if (!logged) {
-    return <Login />;
+    return (
+      <Layout>
+        <Login />
+      </Layout>
+    );
   }
 
   function closeModal() {
@@ -27,7 +31,7 @@ const IndexPage = () => {
   const isModalOpen = Boolean(selectedEntry);
 
   return (
-    <main>
+    <Layout>
       <Modal
         ariaHideApp={false}
         isOpen={isModalOpen}
@@ -54,7 +58,7 @@ const IndexPage = () => {
         entries={entries}
         rings={rings}
       />
-    </main>
+    </Layout>
   );
 };
 
