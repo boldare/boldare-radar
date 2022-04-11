@@ -15,6 +15,7 @@ export interface Entry {
   slug: string;
   quadrant: QuadrantName;
   ring: RingName;
+  html: string;
   label: string;
   active: boolean;
   moved: number;

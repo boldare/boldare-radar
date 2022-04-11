@@ -4,6 +4,7 @@ import { Entry, Quadrant, QuadrantName, Ring, RingName } from "../models/radar";
 interface LocalDataNode {
   slug: string;
   details: {
+    html: string;
     meta: {
       category: QuadrantName;
       name: string;
@@ -22,6 +23,7 @@ export const LocalDataQuery = graphql`
     nodes {
       slug: name
       details: childMarkdownRemark {
+        html
         meta: frontmatter {
           category
           name
@@ -54,6 +56,7 @@ function mapNodeToEntry(ring: RingName, node: LocalDataNode): Entry {
     slug: node.slug,
     label: node.details.meta.name,
     quadrant: node.details.meta.category,
+    html: node.details.html,
     ring,
     active: true,
     moved: 0,
