@@ -1,10 +1,10 @@
-type QuadrantName =
+export type QuadrantName =
   | "Techniques"
   | "Tools"
   | "Platforms & Services"
   | "Frameworks";
 
-type RingName = "Prototype" | "MVP" | "PMF/Scaling";
+export type RingName = "Prototype" | "MVP" | "Scaleup";
 
 interface Comment {
   author: string;
