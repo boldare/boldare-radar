@@ -35,3 +35,5 @@ yarn test
 ## How to update the data?
 
 Edit or add new file in `data` folder.
+
+You can use the template from [here](./data/template.md).
