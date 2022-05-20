@@ -1,0 +1,43 @@
+name: Inbox
+description: Suggest new item to inbox
+title: "[Inbox]: "
+labels: ["inbox"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: What is the name of the technology, technique or service?
+    validations:
+      required: true
+  - type: dropdown
+    id: quadrant
+    attributes:
+      label: What is it?
+      options:
+        - Techniques
+        - Tools
+        - Platforms & Services
+        - Frameworks
+    validations:
+      required: true
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Phase
+      description: What phase it should be located in?
+      options:
+        - Prototype
+        - MVP
+        - Scaleup
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Why it should be used? What are the use cases? What are the tradeoffs or things to watchout?
+    validations:
+      required: true
+
+
