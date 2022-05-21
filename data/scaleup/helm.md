@@ -1,4 +1,0 @@
----
-name: "Helm"
-category: "Tools"
----

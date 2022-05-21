@@ -1,6 +1,14 @@
 import * as React from "react";
-import { Entry, Quadrant, Ring } from "../../models/radar";
+import { useRadarData } from "../../hooks/useRadarData";
+import {
+  Entry,
+  Quadrant,
+  QuadrantName,
+  Ring,
+  RingName,
+} from "../../models/radar";
 import { radar_visualization } from "../../radar/visualization";
+import { useHistory } from "@docusaurus/router";
 
 interface RadarProps {
   quadrants: Quadrant[];
@@ -9,17 +17,17 @@ interface RadarProps {
   handleEntryClick: (entry: Entry) => void;
 }
 
-const quadrantMap = {
-  Frameworks: 0,
-  "Platforms & Services": 1,
-  Techniques: 2,
-  Tools: 3,
+const quadrantMap: Record<QuadrantName, number> = {
+  [QuadrantName.Frameworks]: 0,
+  [QuadrantName.PlatformsAndServices]: 1,
+  [QuadrantName.Techniques]: 2,
+  [QuadrantName.Tools]: 3,
 };
 
-const ringMap = {
-  Prototype: 0,
-  MVP: 1,
-  Scaleup: 2,
+const ringMap: Record<RingName, number> = {
+  [RingName.Prototype]: 0,
+  [RingName.MVP]: 1,
+  [RingName.Scaleup]: 2,
 };
 
 export function Radar({
@@ -33,13 +41,11 @@ export function Radar({
 
   const formattedEntries = React.useMemo(
     () =>
-      entries.map((entry) => {
-        return {
-          ...entry,
-          ring: ringMap[entry.ring],
-          quadrant: quadrantMap[entry.quadrant],
-        };
-      }),
+      entries.map((entry) => ({
+        ...entry,
+        ring: ringMap[entry.ring],
+        quadrant: quadrantMap[entry.quadrant],
+      })),
     [entries]
   );
 
@@ -70,4 +76,15 @@ export function Radar({
   }, [ref, radarRendered, entries, rings, quadrants]);
 
   return <svg ref={ref} />;
+}
+
+export function RadarContainer() {
+  const data = useRadarData();
+  const history = useHistory();
+
+  return (
+    <div style={{ overflow: "auto" }}>
+      <Radar {...data} handleEntryClick={(entry) => history.push(entry.slug)} />
+    </div>
+  );
 }

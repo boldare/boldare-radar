@@ -1,4 +1,0 @@
----
-name: "Docker"
-category: "Tools"
----

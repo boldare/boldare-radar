@@ -1,4 +1,0 @@
----
-name: "RabbitMQ"
-category: "Tools"
----
