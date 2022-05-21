@@ -1,4 +1,0 @@
----
-name: "MariaDB"
-category: "Tools"
----

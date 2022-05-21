@@ -1,4 +1,0 @@
----
-name: "Nginx"
-category: "Tools"
----

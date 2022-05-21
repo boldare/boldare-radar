@@ -1,4 +1,0 @@
----
-name: "SSR"
-category: "Techniques"
----
