@@ -1,49 +1,11 @@
-import { graphql, useStaticQuery } from "gatsby";
 import { Entry, Quadrant, QuadrantName, Ring, RingName } from "../models/radar";
-
-interface LocalDataNode {
-  slug: string;
-  details: {
-    html: string;
-    meta: {
-      category: QuadrantName;
-      name: string;
-    };
-  };
-}
-
-interface LocalDataQueryData {
-  prototype: { nodes: LocalDataNode[] };
-  mvp: { nodes: LocalDataNode[] };
-  scaleup: { nodes: LocalDataNode[] };
-}
-
-export const LocalDataQuery = graphql`
-  fragment Entry on FileConnection {
-    nodes {
-      slug: name
-      details: childMarkdownRemark {
-        html
-        meta: frontmatter {
-          category
-          name
-        }
-      }
-    }
-  }
-
-  {
-    prototype: allFile(filter: { sourceInstanceName: { eq: "prototype" } }) {
-      ...Entry
-    }
-    mvp: allFile(filter: { sourceInstanceName: { eq: "mvp" } }) {
-      ...Entry
-    }
-    scaleup: allFile(filter: { sourceInstanceName: { eq: "scaleup" } }) {
-      ...Entry
-    }
-  }
-`;
+import {
+  hasSidebarItemLabel,
+  isSidebarCategory,
+  SidebarCategory,
+  SidebarLink,
+  useDocsSidebarItems,
+} from "./useDocsSidebarItems";
 
 interface UseRadarData {
   rings: Ring[];
@@ -51,42 +13,64 @@ interface UseRadarData {
   entries: Entry[];
 }
 
-function mapNodeToEntry(ring: RingName, node: LocalDataNode): Entry {
+function toEntry(
+  ring: SidebarLink,
+  quadrant: SidebarLink,
+  item: SidebarLink
+): Entry {
+  if (!Object.values(QuadrantName).includes(quadrant.label as QuadrantName)) {
+    throw new Error(
+      `Unknown quadrant value ${quadrant.label} for href ${item.href}`
+    );
+  } else if (!Object.values(RingName).includes(ring.label as RingName)) {
+    throw new Error(`Unknown ring value ${ring.label} for href ${item.href}`);
+  }
   return {
-    slug: node.slug,
-    label: node.details.meta.name,
-    quadrant: node.details.meta.category,
-    html: node.details.html,
-    ring,
-    active: true,
+    slug: item.href,
+    label: item.label,
+    quadrant: quadrant.label as QuadrantName,
+    ring: ring.label as RingName,
     moved: 0,
+    active: true,
   };
 }
 
+function useRadarEntries(): Entry[] {
+  const sidebarItems = useDocsSidebarItems();
+  const ringsItems = sidebarItems.filter(
+    (ringItem) =>
+      isSidebarCategory(ringItem) &&
+      Object.values(RingName).includes(ringItem.label as RingName)
+  ) as SidebarCategory[];
+  const entries = ringsItems
+    .filter(isSidebarCategory)
+    .flatMap((ringItem) =>
+      ringItem.items
+        .filter(isSidebarCategory)
+        .flatMap((quadrantItem) =>
+          quadrantItem.items
+            .filter(hasSidebarItemLabel)
+            .flatMap((item) => toEntry(ringItem, quadrantItem, item))
+        )
+    );
+
+  return entries;
+}
+
 export function useRadarData(): UseRadarData {
-  const data = useStaticQuery<LocalDataQueryData>(LocalDataQuery);
-
-  const prototypeEntries = data.prototype.nodes.map((node) =>
-    mapNodeToEntry("Prototype", node)
-  );
-  const mvpEntries = data.mvp.nodes.map((node) => mapNodeToEntry("MVP", node));
-  const scaleupEntries = data.scaleup.nodes.map((node) =>
-    mapNodeToEntry("Scaleup", node)
-  );
-
-  const entries = [...prototypeEntries, ...mvpEntries, ...scaleupEntries];
+  const entries = useRadarEntries();
 
   const rings = [
-    { name: "Prototype", color: "#6652e4" },
-    { name: "MVP", color: "#afc9dd" },
-    { name: "Scaleup", color: "#f1d624" },
+    { name: RingName.Prototype, color: "#6652e4" },
+    { name: RingName.MVP, color: "#afc9dd" },
+    { name: RingName.Scaleup, color: "#f1d624" },
   ] as Ring[];
 
   const quadrants = [
-    { name: "Frameworks" },
-    { name: "Platforms & Services" },
-    { name: "Techniques" },
-    { name: "Tools" },
+    { name: QuadrantName.Frameworks },
+    { name: QuadrantName.PlatformsAndServices },
+    { name: QuadrantName.Techniques },
+    { name: QuadrantName.Tools },
   ] as Quadrant[];
 
   return { entries, rings, quadrants };

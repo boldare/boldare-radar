@@ -1,4 +1,0 @@
----
-name: "Terraform"
-category: "Tools"
----

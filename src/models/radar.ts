@@ -1,10 +1,15 @@
-export type QuadrantName =
-  | "Techniques"
-  | "Tools"
-  | "Platforms & Services"
-  | "Frameworks";
+export enum QuadrantName {
+  Techniques = "Techniques",
+  Tools = "Tools",
+  PlatformsAndServices = "Platforms & Services",
+  Frameworks = "Frameworks",
+}
 
-export type RingName = "Prototype" | "MVP" | "Scaleup";
+export enum RingName {
+  Prototype = "Prototype",
+  MVP = "MVP",
+  Scaleup = "Scaleup",
+}
 
 interface Comment {
   author: string;
@@ -15,7 +20,6 @@ export interface Entry {
   slug: string;
   quadrant: QuadrantName;
   ring: RingName;
-  html: string;
   label: string;
   active: boolean;
   moved: number;

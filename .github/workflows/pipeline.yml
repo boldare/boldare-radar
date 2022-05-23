@@ -28,9 +28,9 @@ jobs:
       - name: Lint
         id: Lint
         run: yarn lint
-      - name: Test
-        id: Test
-        run: yarn test
+      # - name: Test
+      #   id: Test
+      #   run: yarn test
       - name: Build
         id: build
         run: yarn build

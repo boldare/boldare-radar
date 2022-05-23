@@ -1,4 +1,0 @@
----
-name: "Lighthouse"
-category: "Tools"
----

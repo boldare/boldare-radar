@@ -1,4 +1,0 @@
----
-name: "Kubernetes"
-category: "Tools"
----
