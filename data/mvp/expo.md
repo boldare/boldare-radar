@@ -1,4 +1,0 @@
----
-name: "Expo"
-category: "Frameworks"
----

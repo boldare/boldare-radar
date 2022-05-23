@@ -1,4 +1,0 @@
----
-name: "Monorepo"
-category: "Techniques"
----

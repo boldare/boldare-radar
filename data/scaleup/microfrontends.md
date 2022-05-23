@@ -1,4 +1,0 @@
----
-name: "Microfrontends"
-category: "Techniques"
----

@@ -1,4 +1,0 @@
----
-name: "PostgreSQL"
-category: "Tools"
----

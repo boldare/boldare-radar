@@ -1,0 +1,17 @@
+---
+slug: vue-testing
+title: Testowanie Vue
+authors: [goral]
+tags: [vue, testing]
+---
+
+Polecam materiał developera z Gitlaba nt. dobrych praktyk pisania testów jednostkowych w Vue
+
+- testuj output componentu (podejście black-box), nie warto testować w izolacji computed i methods
+- używaj factory method do renderowania komponentu
+- ekstrahuj do funkcji znajdowanie elementów komponentu ('ala page object), by ułatwić czytanie testu i ułatwić ewentualną podmianę selektora
+- act as a user - wszelkie zmiany stanu komponentu wykonuj tak, jak robi to end user
+- shallowMount > mount - sprawdzaj jedynie kontrakt (propsy jakie są przekazywane) child componentów
+
+Osobiście też polecam korzystanie z `@testing-library/vue` ponad `@vue/test-utils`, bo `testing-library` swoim API pomaga nam w "myśleniu jak user" :slightly_smiling_face:
+Poza tym, jako ciekawostka - ostatnio w #netvico-team-bldr zaczęliśmy wprowadzać testy E2E napisane w cypressie, korzystające ze składni gherkinowskiej. Wykorzystujemy w tym celu cypress-cucumber-preprocessor. Na pierwszy rzut oka wygląda to całkiem ciekawie, zwłaszcza zrobiło to wrażenie na review przed naszym PO

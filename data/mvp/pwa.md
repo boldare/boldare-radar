@@ -1,4 +1,0 @@
----
-name: "PWA"
-category: "Techniques"
----
