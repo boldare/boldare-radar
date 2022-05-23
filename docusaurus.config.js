@@ -24,13 +24,13 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
-          editUrl: "https://github.com/boldare/boldare-radar/",
+          editUrl: "https://github.com/boldare/boldare-radar/edit/main",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
         blog: {
           showReadingTime: true,
-          editUrl: "https://github.com/boldare/boldare-radar/",
+          editUrl: "https://github.com/boldare/boldare-radar/edit/main",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
