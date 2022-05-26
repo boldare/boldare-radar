@@ -249,7 +249,7 @@ export function radar_visualization(config: Config) {
     .attr("width", 1)
     .attr("height", 1)
     .attr("id", "solid");
-  filter.append("feFlood").attr("flood-color", "rgb(0, 0, 0, 0.8)");
+  filter.append("feFlood").attr("flood-color", "var(--ifm-font-color-base)");
   filter.append("feComposite").attr("in", "SourceGraphic");
 
   // draw rings
@@ -268,8 +268,8 @@ export function radar_visualization(config: Config) {
         .text(config.rings[i].name)
         .attr("y", -rings[i].radius + 62)
         .attr("text-anchor", "middle")
-        .style("fill", "#e5e5e5")
-        .style("font-family", "Arial, Helvetica")
+        .style("font-family", "TT Commons")
+        .style("fill", "var(--ifm-font-color-base)")
         .style("font-size", "42px")
         .style("font-weight", "bold")
         .style("pointer-events", "none")
@@ -296,8 +296,9 @@ export function radar_visualization(config: Config) {
       .append("text")
       .attr("transform", translate(title_offset.x, title_offset.y))
       .text(config.title)
-      .style("font-family", "Arial, Helvetica")
-      .style("font-size", "34px");
+      .style("font-family", "TT Commons")
+      .style("font-size", "34px")
+      .style("fill", "var(--ifm-font-color-base)");
 
     // footer
     radar
@@ -305,8 +306,9 @@ export function radar_visualization(config: Config) {
       .attr("transform", translate(footer_offset.x, footer_offset.y))
       .text("▲ moved up     ▼ moved down")
       .attr("xml:space", "preserve")
-      .style("font-family", "Arial, Helvetica")
-      .style("font-size", "10px");
+      .style("font-family", "TT Commons")
+      .style("fill", "var(--ifm-font-color-base)")
+      .style("font-size", "12px");
 
     // legend
     var legend = radar.append("g");
@@ -318,15 +320,17 @@ export function radar_visualization(config: Config) {
           translate(legend_offset[quadrant].x, legend_offset[quadrant].y - 45)
         )
         .text(config.quadrants[quadrant].name)
-        .style("font-family", "Arial, Helvetica")
-        .style("font-size", "18px");
+        .style("font-family", "TT Commons")
+        .style("font-size", "20px")
+        .style("fill", "var(--ifm-font-color-base)");
       for (var ring = 0; ring < 3; ring++) {
         legend
           .append("text")
           .attr("transform", legend_transform(quadrant, ring))
           .text(config.rings[ring].name)
-          .style("font-family", "Arial, Helvetica")
-          .style("font-size", "12px")
+          .style("font-family", "TT Commons")
+          .style("fill", "var(--ifm-font-color-base)")
+          .style("font-size", "16px")
           .style("font-weight", "bold");
         legend
           .selectAll(".legend" + quadrant + ring)
@@ -347,8 +351,9 @@ export function radar_visualization(config: Config) {
           .text(function (d: any, i) {
             return d.id + ". " + d.label;
           })
-          .style("font-family", "Arial, Helvetica")
-          .style("font-size", "11px")
+          .style("font-family", "TT Commons")
+          .style("fill", "var(--ifm-font-color-base)")
+          .style("font-size", "14px")
           .on("click", (e) => {
             config.handleEntryClick(e);
           })
@@ -376,12 +381,16 @@ export function radar_visualization(config: Config) {
     .style("opacity", 0)
     .style("pointer-events", "none")
     .style("user-select", "none");
-  bubble.append("rect").attr("rx", 4).attr("ry", 4).style("fill", "#333");
+  bubble
+    .append("rect")
+    .attr("rx", 4)
+    .attr("ry", 4)
+    .style("fill", "var(--ifm-font-color-base)");
   bubble
     .append("text")
     .style("font-family", "sans-serif")
     .style("font-size", "10px")
-    .style("fill", "#fff");
+    .style("fill", "var(--ifm-color-content-inverse)");
   bubble.append("path").attr("d", "M 0,0 10,0 5,8 z").style("fill", "#333");
 
   function showBubble(d: any) {
@@ -390,7 +399,7 @@ export function radar_visualization(config: Config) {
       var bbox = tooltip.node()!.getBBox();
       d3.select("#bubble")
         .attr("transform", translate(d.x - bbox.width / 2, d.y - 16))
-        .style("opacity", 0.8);
+        .style("opacity", 1);
       d3.select("#bubble rect")
         .attr("x", -5)
         .attr("y", -bbox.height)
@@ -414,7 +423,7 @@ export function radar_visualization(config: Config) {
     var legendItem = document.getElementById("legendItem" + d.id);
     if (legendItem) {
       legendItem.setAttribute("filter", "url(#solid)");
-      legendItem.setAttribute("fill", "white");
+      legendItem.style.fill = "var(--ifm-color-content-inverse)";
     }
   }
 
@@ -422,7 +431,7 @@ export function radar_visualization(config: Config) {
     var legendItem = document.getElementById("legendItem" + d.id);
     if (legendItem) {
       legendItem.removeAttribute("filter");
-      legendItem.removeAttribute("fill");
+      legendItem.style.fill = "var(--ifm-font-color-base)";
     }
   }
 
@@ -478,9 +487,10 @@ export function radar_visualization(config: Config) {
         .attr("y", 3)
         .attr("text-anchor", "middle")
         .style("fill", "#fff")
-        .style("font-family", "Arial, Helvetica")
+        .style("font-family", "TT Commons")
+        .style("fill", "var(--ifm-color-content-inverse)")
         .style("font-size", function (d: any) {
-          return blip_text.length > 2 ? "8px" : "9px";
+          return blip_text.length > 2 ? "11px" : "12px";
         })
         .style("pointer-events", "none")
         .style("user-select", "none");
