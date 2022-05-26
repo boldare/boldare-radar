@@ -67,3 +67,11 @@
 .footer--dark {
   --ifm-footer-background-color: #242424;
 }
+
+.navbar__title {
+  padding-top: 0.25rem;
+}
+
+.navbar__link {
+  padding-top: 0.5rem;
+}
