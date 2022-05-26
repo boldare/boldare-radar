@@ -332,11 +332,8 @@ export function radar_visualization(config: Config) {
           .selectAll(".legend" + quadrant + ring)
           .data(segmented[quadrant][ring])
           .enter()
-          .append("a")
-          .attr("href", function (d: any, i) {
-            return d.link ? d.link : "#"; // stay on same page if no link was provided
-          })
           .append("text")
+          .attr("cursor", "pointer")
           .attr("transform", function (d, i: any) {
             return legend_transform(quadrant, ring, i);
           })
