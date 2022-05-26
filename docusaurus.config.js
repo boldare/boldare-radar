@@ -50,6 +50,7 @@ const config = {
       },
       navbar: {
         title: "Radar",
+        hideOnScroll: true,
         logo: {
           alt: "Boldare Radar",
           src: "img/logo-light.svg",
