@@ -59,7 +59,7 @@ export function Radar({
       width: 1450,
       height: 1000,
       colors: {
-        background: "#fff",
+        background: "var(--ifm-background-color)",
         grid: "#bbb",
         inactive: "#ddd",
       },

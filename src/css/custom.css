@@ -4,8 +4,41 @@
  * work well for content-centric websites.
  */
 
+@font-face {
+  font-family: 'TT Commons';
+  font-display: swap;
+  src:  url('../../static/font/TT-Commons-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  font-display: swap;
+  src:  url('../../static/font/TT-Commons-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  font-display: swap;
+  src:  url('../../static/font/TT-Commons-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'TT Commons';
+  font-display: swap;
+  src:  url('../../static/font/TT-Commons-Bold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
 /* You can override the default Infima variables here. */
 :root {
+  /* font-size: 18px; */
   --ifm-color-primary: #6652e4;
   --ifm-color-primary-dark: #4e37e0;
   --ifm-color-primary-darker: #4e37e0;
@@ -13,7 +46,10 @@
   --ifm-color-primary-light: #7e6de8;
   --ifm-color-primary-lighter: #8a7aea;
   --ifm-color-primary-lightest: #ada2f1;
+  --ifm-font-family-base: TT Commons, system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   --ifm-code-font-size: 95%;
+  font-size: 1.2rem;
+  font-family: TT Commons;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -30,4 +66,12 @@
 
 .footer--dark {
   --ifm-footer-background-color: #242424;
+}
+
+.navbar__title {
+  padding-top: 0.25rem;
+}
+
+.navbar__link {
+  padding-top: 0.5rem;
 }
