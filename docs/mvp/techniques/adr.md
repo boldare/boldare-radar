@@ -14,8 +14,8 @@ ADR stands for **Architectural Decision Records**.
 
 ## Benefits
 
-- **Phase change** - Decision that we made in MVP phase, might not be the best in PMF phase (Product Market Fit). By keeping those ADR's from previous phase we know why we made some decision and we can think about how we can change it.
-- **Transparency** - Any decision made by team will be easy to track and accessible. It allows the team to access the information about decision made in the past (f.e. 2 years ago).
+- **Phase change** - Decision that we made in MVP (Minimum Viable Product) phase, might not be the best in PMF phase (Product Market Fit). By keeping those ADR's from previous phase we know why we made some decision and we can think about how we can change it.
+- **Transparency** - Any decision made by team will be easy to track and accessible. It allows the team to access the information about decision made in the past (f.e. 2 years ago). It also allows to keep the knowledge even if someone is leaving the team.
 - **Onboarding Process improvement** - By giving them option to read about our approach to the problem, new joiners can easily understand the context behind the decision. Example: If we would have an ADR for Chart Library, the person can understand the context of change, solutions we thought about and understand why we chose specific solution. We can also include something like:
   - Why we have micro-services, instead of monolith application?
   - Why are we using Ant Design instead of Material Design?
