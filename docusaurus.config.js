@@ -59,9 +59,15 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "radar",
+            docId: "tech/radar",
             position: "left",
             label: "Docs",
+          },
+          {
+            type: "doc",
+            docId: "design/accessibility",
+            position: "left",
+            label: "Design",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
