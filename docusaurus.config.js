@@ -61,7 +61,7 @@ const config = {
             type: "doc",
             docId: "tech/radar",
             position: "left",
-            label: "Docs",
+            label: "Tech",
           },
           {
             type: "doc",
