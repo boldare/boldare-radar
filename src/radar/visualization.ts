@@ -30,7 +30,6 @@ interface Config {
   width: number;
   height: number;
   colors: Record<string, string>;
-  title: string;
   quadrants: Quadrant[];
   // TODO: fix type
   entries: any[];
@@ -66,8 +65,6 @@ export function radar_visualization(config: Config) {
   ];
 
   const rings = [{ radius: 130 }, { radius: 220 }, { radius: 310 }];
-
-  const title_offset = { x: -675, y: -420 };
 
   const footer_offset = { x: -675, y: 420 };
 
@@ -291,16 +288,6 @@ export function radar_visualization(config: Config) {
 
   // draw title and legend (only in print layout)
   if (config.print_layout) {
-    // title
-    radar
-      .append("text")
-      .attr("transform", translate(title_offset.x, title_offset.y))
-      .text(config.title)
-      .style("font-family", "TT Commons")
-      .style("font-size", "34px")
-      .style("fill", "var(--ifm-font-color-base)");
-
-    // footer
     radar
       .append("text")
       .attr("transform", translate(footer_offset.x, footer_offset.y))
