@@ -63,7 +63,6 @@ export function Radar({
         grid: "#bbb",
         inactive: "#ddd",
       },
-      title: "Boldare Radar",
       quadrants,
       entries: formattedEntries,
       rings,
