@@ -8,7 +8,7 @@ export function useGoogleAuth({
 }) {
   const [logged, setLogged] = React.useState<boolean>(false);
 
-  function handleCredentialResponse(response: CredentialResponse) {
+  function handleCredentialResponse(_response: CredentialResponse) {
     setLogged(true);
   }
 
