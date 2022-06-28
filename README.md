@@ -4,6 +4,16 @@ Code implementation of [Boldare Tech Radar MVP](https://app.mural.co/t/boldare50
 
 ## How to setup the project?
 
+### Requirements
+
+[Node.js](https://nodejs.org/en/) with version `^18.0.0`. If you use [Node Version Manager](https://github.com/nvm-sh/nvm), you can just run a following command:
+
+```bash
+nvm use
+```
+
+### Setup
+
 Install all dependencies with Yarn
 
 ```bash
