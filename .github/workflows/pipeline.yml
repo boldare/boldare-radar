@@ -16,13 +16,13 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
       - name: Check out repository code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           fetch-depth: 0
-      - name: Use Node.js 14
-        uses: actions/setup-node@v2
+      - name: Use Node.js 18
+        uses: actions/setup-node@v3
         with:
-          node-version: "14"
+          node-version: "18"
           cache: "yarn"
       - name: Install dependencies
         id: install-deps
