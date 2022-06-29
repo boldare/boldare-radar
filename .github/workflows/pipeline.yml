@@ -3,13 +3,9 @@ on:
   push:
     branches:
       - main
-    paths:
-      - "**"
-      - "!**.md"
   pull_request:
     paths:
       - "**"
-      - "!**.md"
 
 jobs:
   ci_cd:
