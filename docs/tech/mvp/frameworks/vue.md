@@ -10,11 +10,7 @@
 
 - [Documentation](https://vuejs.org/guide/introduction.html)
 
-### ✍️ Blogs
-
-- [Overreacted](https://overreacted.io/)
-- [Josh W Comeau about React](https://www.joshwcomeau.com/tutorials/react/)
-
 ### 🎥 Videos
 
 - [Vue Mastery](https://www.vuemastery.com/)
+- [Lachlan Miller](https://www.youtube.com/c/LachlanMiller/videos)
