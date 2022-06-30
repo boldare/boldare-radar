@@ -45,3 +45,13 @@ yarn test
 ## How to update the data?
 
 Edit or add new file in `docs` or `blog` folder. You can use [Markdown](https://www.markdownguide.org/) or [Mdx](https://mdxjs.com/) for it. Each file in this folders creates a new page. To find more details, please check the [Docusaurus documentation](https://docusaurus.io/docs). For a new page you can use the template from [here](./data/template.md).
+
+## How to run Amplitude on Dev Environment?
+
+In order to run the Amplitude on dev environment you need to create `.env` file in your local repository.
+Inside that `.env` file create variable:
+```env
+REACT_APP_AMPLITUDE_API_KEY = key
+```
+
+Replace the `key` with Development key that You can generate from Amplitude or obtain from Maintainers.
