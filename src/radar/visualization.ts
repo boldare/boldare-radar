@@ -153,7 +153,6 @@ export function radar_visualization(config: Config) {
   // position each entry randomly in its segment
   for (var i = 0; i < config.entries.length; i++) {
     var entry = config.entries[i];
-    console.log(entry);
     entry.segment = segment(entry.quadrantId, entry.ringId);
     var point = entry.segment.random();
     entry.x = point.x;
