@@ -44,8 +44,8 @@ export function Radar({
     () =>
       entries.map((entry) => ({
         ...entry,
-        ring: ringMap[entry.ring],
-        quadrant: quadrantMap[entry.quadrant],
+        ringId: ringMap[entry.ring],
+        quadrantId: quadrantMap[entry.quadrant],
       })),
     [entries]
   );
@@ -54,7 +54,6 @@ export function Radar({
     if (radarRendered.current) {
       return;
     }
-    console.log(ampli.isLoaded);
     ampli.viewRadar();
 
     radar_visualization({
