@@ -9,6 +9,7 @@ import {
 } from "../../models/radar";
 import { radar_visualization } from "../../radar/visualization";
 import { useHistory } from "@docusaurus/router";
+import { ampli } from "../../ampli";
 
 interface RadarProps {
   quadrants: Quadrant[];
@@ -53,6 +54,8 @@ export function Radar({
     if (radarRendered.current) {
       return;
     }
+    console.log(ampli.isLoaded);
+    ampli.viewRadar();
 
     radar_visualization({
       ref,
@@ -83,7 +86,17 @@ export function RadarContainer() {
 
   return (
     <div style={{ overflow: "auto" }}>
-      <Radar {...data} handleEntryClick={(entry) => history.push(entry.slug)} />
+      <Radar
+        {...data}
+        handleEntryClick={(entry) => {
+          ampli.openItem({
+            itemName: entry.label,
+            itemQuadrant: entry.quadrant,
+            itemRing: entry.ring,
+          });
+          history.push(entry.slug);
+        }}
+      />
     </div>
   );
 }

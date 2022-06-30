@@ -1,5 +1,6 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import * as React from "react";
+import { useEffect } from "react";
 import { ampli } from "../ampli";
 import { Login } from "../components/Login";
 import { useGoogleAuth } from "../hooks/useGoogleAuth";
@@ -14,12 +15,14 @@ interface RootProps {
 
 const Root = ({ children }: RootProps) => {
   const { siteConfig } = useDocusaurusContext();
-  console.log(siteConfig);
-  ampli.load({
-    client: {
-      apiKey: siteConfig.customFields?.REACT_APP_AMPLITUDE_API_KEY || "",
-    },
-  });
+  if (!ampli.isLoaded) {
+    ampli.load({
+      client: {
+        apiKey:
+          String(siteConfig.customFields?.REACT_APP_AMPLITUDE_API_KEY) || "",
+      },
+    });
+  }
   const { logged } = useGoogleAuth({ buttonElementId: "googleLoginElement" });
 
   if (!logged && !isDev()) {
