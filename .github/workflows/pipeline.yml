@@ -32,6 +32,8 @@ jobs:
       - name: Build
         id: build
         run: yarn build
+        env:
+          REACT_APP_AMPLITUDE_API_KEY: ${{ secrets.REACT_APP_AMPLITUDE_API_KEY}}
       - name: Deploy prod
         if: github.ref == 'refs/heads/main'
         id: deploy-prod

@@ -153,13 +153,13 @@ export function radar_visualization(config: Config) {
   // position each entry randomly in its segment
   for (var i = 0; i < config.entries.length; i++) {
     var entry = config.entries[i];
-    entry.segment = segment(entry.quadrant, entry.ring);
+    entry.segment = segment(entry.quadrantId, entry.ringId);
     var point = entry.segment.random();
     entry.x = point.x;
     entry.y = point.y;
     entry.color =
       entry.active || config.print_layout
-        ? config.rings[entry.ring].color
+        ? config.rings[entry.ringId].color
         : config.colors.inactive;
   }
 
@@ -173,7 +173,7 @@ export function radar_visualization(config: Config) {
   }
   for (var i = 0; i < config.entries.length; i++) {
     var entry = config.entries[i];
-    segmented[entry.quadrant][entry.ring].push(entry);
+    segmented[entry.quadrantId][entry.ringId].push(entry);
   }
 
   // assign unique sequential id to each entry
@@ -430,7 +430,7 @@ export function radar_visualization(config: Config) {
     .append("g")
     .attr("class", "blip")
     .attr("transform", function (d: any, i: any) {
-      return legend_transform(d.quadrant, d.ring, i);
+      return legend_transform(d.quadrantId, d.ringId, i);
     })
     .on("mouseover", function (d) {
       showBubble(d);
