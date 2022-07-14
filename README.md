@@ -1,6 +1,6 @@
 # Boldare Radar
 
-Code implementation of [Boldare Tech Radar MVP](https://app.mural.co/t/boldare5080/m/boldare5080/1614856271941/8b3cd819b9ab4c8729723d891d9b94319806238b). Radar uses [Docusaurus](https://docusaurus.io/) as a framework for building documentations.
+Technology radar and knowledge source for Boldare. Radar uses [Docusaurus](https://docusaurus.io/) as a framework for building documentations.
 
 ## How to setup the project?
 
@@ -50,8 +50,8 @@ Edit or add new file in `docs` or `blog` folder. You can use [Markdown](https://
 
 ## How to work with Ampli & Amplitude?
 
-In `Boldare Radar` we are using Amplitude as an Analytics Software. 
-With Amplitude we are also testing `Ampli` which is a new tool that allows us to verify if all defined events are used in Application. 
+In `Boldare Radar` we are using Amplitude as an Analytics Software.
+With Amplitude we are also testing `Ampli` which is a new tool that allows us to verify if all defined events are used in Application.
 
 ### What is Ampli?
 
