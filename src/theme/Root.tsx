@@ -2,10 +2,6 @@ import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import * as React from "react";
 import { ampli } from "../ampli";
 
-const isDev = () => {
-  return process.env.NODE_ENV === "development";
-};
-
 interface RootProps {
   children: React.ReactNode;
 }
