@@ -1,13 +1,16 @@
 # Title
 
-## Used by
+## 👀 TLDR;
 
-- [Team name](slack-link/confluence-link)
 
-## Internal links
+## ➕ Benefits
 
-- [Confluence title](http://confluence-link)
+## ➖ When not to use
 
-## Links
+## 💡 Resources
 
-- [Text to display](http://google.com)
+### 📜 Articles
+
+### 🎥 Videos
+
+### ⌨️ Implementations

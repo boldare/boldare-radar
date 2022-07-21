@@ -44,7 +44,7 @@ yarn test
 
 ## How to update the data?
 
-Edit or add new file in `docs` or `blog` folder. You can use [Markdown](https://www.markdownguide.org/) or [Mdx](https://mdxjs.com/) for it. Each file in this folders creates a new page. To find more details, please check the [Docusaurus documentation](https://docusaurus.io/docs). For a new page you can use the template from [here](./data/template.md).
+Edit or add new file in `docs` or `blog` folder. You can use [Markdown](https://www.markdownguide.org/) or [Mdx](https://mdxjs.com/) for it. Each file in this folders creates a new page. To find more details, please check the [Docusaurus documentation](https://docusaurus.io/docs). For a new page you can use the template from [here](./docs-template.md).
 
 
 
