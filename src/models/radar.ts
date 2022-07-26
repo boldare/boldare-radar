@@ -26,11 +26,13 @@ export interface Entry {
   moved: number;
   links?: string[];
   comments?: Comment[];
+  externalLink: string;
 }
 
 export interface Ring {
   name: RingName;
   color: string;
+  externalLink: string;
 }
 
 export interface Quadrant {

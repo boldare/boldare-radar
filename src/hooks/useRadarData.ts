@@ -61,10 +61,29 @@ export function useRadarData(): UseRadarData {
   const entries = useRadarEntries();
 
   const rings = [
-    { name: RingName.Prototype, color: "#6652e4" },
-    { name: RingName.MVP, color: "#afc9dd" },
-    { name: RingName.PMF, color: "#f1d624" },
-    { name: RingName.Scaling, color: "#242424" },
+    {
+      name: RingName.Prototype,
+      color: "#6652e4",
+      externalLink:
+        "https://www.boldare.com/services/full-cycle-product-development/prototyping/",
+    },
+    {
+      name: RingName.MVP,
+      color: "#afc9dd",
+      externalLink: "https://www.boldare.com/services/mvp-development/",
+    },
+    {
+      name: RingName.PMF,
+      color: "#f1d624",
+      externalLink:
+        "https://www.boldare.com/services/product-market-fit-expanding-demand/",
+    },
+    {
+      name: RingName.Scaling,
+      color: "#242424",
+      externalLink:
+        "https://www.boldare.com/services/scaling-your-product-thriving-in-the-market/",
+    },
   ] as Ring[];
 
   const quadrants = [

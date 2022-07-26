@@ -267,6 +267,7 @@ export function radar_visualization(config: Config) {
     if (config.print_layout) {
       grid
         .append("text")
+        .data([config.rings[i]])
         .text(config.rings[i].name)
         .attr("y", -rings[i].radius + 62)
         .attr("text-anchor", "middle")
@@ -274,8 +275,18 @@ export function radar_visualization(config: Config) {
         .style("fill", "var(--ifm-color-emphasis-400)")
         .style("font-size", "36px")
         .style("font-weight", "bold")
-        .style("pointer-events", "none")
-        .style("user-select", "none");
+        .attr("cursor", "pointer")
+        .on("click", (e) => {
+          config.handleEntryClick(e);
+        })
+        .on("mouseover", function () {
+          const selection = d3.select(this);
+          selection?.attr("text-decoration", "underline");
+        })
+        .on("mouseout", function () {
+          const selection = d3.select(this);
+          selection?.attr("text-decoration", "none");
+        });
     }
   }
 

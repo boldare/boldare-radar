@@ -89,14 +89,25 @@ export function RadarContainer() {
       <Radar
         {...data}
         handleEntryClick={(entry) => {
-          ampli.openItem({
-            itemName: entry.label,
-            itemQuadrant: entry.quadrant,
-            itemRing: entry.ring,
-          });
+          if (entry?.label) {
+            ampli.openItem({
+              itemName: entry.label,
+              itemQuadrant: entry.quadrant,
+              itemRing: entry.ring,
+            });
+          }
+          if (entry?.externalLink) {
+            openInNewTab(entry.externalLink);
+            return;
+          }
           history.push(entry.slug);
         }}
       />
     </div>
   );
 }
+
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
