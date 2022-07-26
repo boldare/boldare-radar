@@ -30,6 +30,7 @@ body:
         - Prototype
         - MVP
         - Product Market Fit
+        - Scaling
     validations:
       required: true
   - type: textarea
