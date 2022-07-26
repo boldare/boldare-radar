@@ -272,7 +272,7 @@ export function radar_visualization(config: Config) {
         .attr("text-anchor", "middle")
         .style("font-family", "TT Commons")
         .style("fill", "var(--ifm-color-emphasis-400)")
-        .style("font-size", "42px")
+        .style("font-size", "36px")
         .style("font-weight", "bold")
         .style("pointer-events", "none")
         .style("user-select", "none");
