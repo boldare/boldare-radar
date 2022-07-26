@@ -29,7 +29,7 @@ body:
       options:
         - Prototype
         - MVP
-        - Scaleup
+        - Product Market Fit
     validations:
       required: true
   - type: textarea

@@ -63,7 +63,8 @@ export function useRadarData(): UseRadarData {
   const rings = [
     { name: RingName.Prototype, color: "#6652e4" },
     { name: RingName.MVP, color: "#afc9dd" },
-    { name: RingName.Scaleup, color: "#f1d624" },
+    { name: RingName.PMF, color: "#f1d624" },
+    { name: RingName.Scaling, color: "#242424" },
   ] as Ring[];
 
   const quadrants = [

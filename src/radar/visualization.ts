@@ -64,7 +64,12 @@ export function radar_visualization(config: Config) {
     { radial_min: -0.5, radial_max: 0, factor_x: 1, factor_y: -1 },
   ];
 
-  const rings = [{ radius: 130 }, { radius: 220 }, { radius: 310 }];
+  const rings = [
+    { radius: 130 },
+    { radius: 220 },
+    { radius: 310 },
+    { radius: 400 },
+  ];
 
   const footer_offset = { x: -675, y: 420 };
 
@@ -179,7 +184,7 @@ export function radar_visualization(config: Config) {
   // assign unique sequential id to each entry
   var id = 1;
   for (var quadrant of [2, 3, 1, 0]) {
-    for (var ring = 0; ring < 3; ring++) {
+    for (var ring = 0; ring < 4; ring++) {
       var entries = segmented[quadrant][ring];
       entries.sort(function (a: any, b: any) {
         return a.label.localeCompare(b.label);
@@ -310,7 +315,7 @@ export function radar_visualization(config: Config) {
         .style("font-family", "TT Commons")
         .style("font-size", "20px")
         .style("fill", "var(--ifm-font-color-base)");
-      for (var ring = 0; ring < 3; ring++) {
+      for (var ring = 0; ring < 4; ring++) {
         legend
           .append("text")
           .attr("transform", legend_transform(quadrant, ring))
@@ -477,7 +482,7 @@ export function radar_visualization(config: Config) {
         .style("font-family", "TT Commons")
         .style("fill", "var(--ifm-color-content-inverse)")
         .style("font-size", function (d: any) {
-          return blip_text.length > 2 ? "11px" : "12px";
+          return blip_text?.length > 2 ? "11px" : "12px";
         })
         .style("pointer-events", "none")
         .style("user-select", "none");

@@ -8,7 +8,8 @@ export enum QuadrantName {
 export enum RingName {
   Prototype = "Prototype",
   MVP = "MVP",
-  Scaleup = "Scaleup",
+  PMF = "Product Market Fit",
+  Scaling = "Scaling",
 }
 
 interface Comment {
