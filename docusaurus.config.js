@@ -32,10 +32,6 @@ const config = {
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
         },
-        blog: {
-          showReadingTime: true,
-          editUrl: "https://github.com/boldare/boldare-radar/edit/main",
-        },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
         },
@@ -67,13 +63,6 @@ const config = {
             position: "left",
             label: "Tech",
           },
-          {
-            type: "doc",
-            docId: "design/accessibility",
-            position: "left",
-            label: "Design",
-          },
-          { to: "/blog", label: "Blog", position: "left" },
           {
             href: "https://github.com/boldare/boldare-radar",
             label: "GitHub",
@@ -121,10 +110,6 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "Blog",
-                to: "/blog",
-              },
               {
                 label: "GitHub",
                 href: "https://github.com/boldare/boldare-radar/",
