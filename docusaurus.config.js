@@ -96,8 +96,12 @@ const config = {
                 to: "/docs/category/mvp",
               },
               {
-                label: "Scaleup",
-                to: "/docs/category/scaleup",
+                label: "Product Market Fit",
+                to: "/docs/category/pmf",
+              },
+              {
+                label: "Scaling",
+                to: "/docs/category/scaling",
               },
             ],
           },

@@ -69,7 +69,7 @@ const rings = [
   },
   {
     color: "#fbdb84",
-    name: "Scaleup",
+    name: "Product Market Fit",
   },
 ] as Ring[];
 

@@ -8,7 +8,8 @@ export enum QuadrantName {
 export enum RingName {
   Prototype = "Prototype",
   MVP = "MVP",
-  Scaleup = "Scaleup",
+  PMF = "Product Market Fit",
+  Scaling = "Scaling",
 }
 
 interface Comment {
@@ -25,11 +26,13 @@ export interface Entry {
   moved: number;
   links?: string[];
   comments?: Comment[];
+  externalLink: string;
 }
 
 export interface Ring {
   name: RingName;
   color: string;
+  externalLink: string;
 }
 
 export interface Quadrant {

@@ -29,7 +29,8 @@ body:
       options:
         - Prototype
         - MVP
-        - Scaleup
+        - Product Market Fit
+        - Scaling
     validations:
       required: true
   - type: textarea

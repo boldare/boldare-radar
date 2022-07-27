@@ -28,7 +28,8 @@ const quadrantMap: Record<QuadrantName, number> = {
 const ringMap: Record<RingName, number> = {
   [RingName.Prototype]: 0,
   [RingName.MVP]: 1,
-  [RingName.Scaleup]: 2,
+  [RingName.PMF]: 2,
+  [RingName.Scaling]: 3,
 };
 
 export function Radar({
@@ -88,14 +89,25 @@ export function RadarContainer() {
       <Radar
         {...data}
         handleEntryClick={(entry) => {
-          ampli.openItem({
-            itemName: entry.label,
-            itemQuadrant: entry.quadrant,
-            itemRing: entry.ring,
-          });
+          if (entry?.label) {
+            ampli.openItem({
+              itemName: entry.label,
+              itemQuadrant: entry.quadrant,
+              itemRing: entry.ring,
+            });
+          }
+          if (entry?.externalLink) {
+            openInNewTab(entry.externalLink);
+            return;
+          }
           history.push(entry.slug);
         }}
       />
     </div>
   );
 }
+
+const openInNewTab = (url) => {
+  const newWindow = window.open(url, "_blank", "noopener,noreferrer");
+  if (newWindow) newWindow.opener = null;
+};
