@@ -1,9 +1,9 @@
-.menu {
+.menu-landing {
   background-color: #f2da3a;
   color: #000;
 }
 
-.menu__container {
+.menu-landing__container {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -11,21 +11,24 @@
   padding-bottom: 20px;
 }
 
-.menu__logo {
+.menu-landing__logo {
   width: 188px
 }
 
-.menu__nav {
+.menu-landing__nav {
   display: flex;
   align-items: center;
 }
 
-.menu__link {
+.menu-landing__link {
   color: #000;
   line-height: 1;
+  padding: 20px 10px;
+  margin: 0 10px;
 }
 
-.menu__link:hover {
+.menu-landing__link:hover {
   color: #000;
   opacity: .6;
+  text-decoration: none;
 }
