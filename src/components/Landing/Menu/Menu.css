@@ -1,0 +1,31 @@
+.menu {
+  background-color: #f2da3a;
+  color: #000;
+}
+
+.menu__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.menu__logo {
+  width: 188px
+}
+
+.menu__nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu__link {
+  color: #000;
+  line-height: 1;
+}
+
+.menu__link:hover {
+  color: #000;
+  opacity: .6;
+}
