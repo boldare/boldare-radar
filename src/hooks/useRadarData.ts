@@ -1,10 +1,8 @@
 import { Entry, Quadrant, QuadrantName, Ring, RingName } from "../models/radar";
 import {
-  hasSidebarItemLabel,
   isSidebarCategory,
   SidebarCategory,
   SidebarLink,
-  useDocsSidebarItems,
 } from "./useDocsSidebarItems";
 
 interface UseRadarData {
@@ -26,8 +24,8 @@ function toEntry(
     throw new Error(`Unknown ring value ${ring.label} for href ${item.href}`);
   }
   return {
-    slug: item.href,
-    label: item.label,
+    slug: item.id,
+    label: item.label || item.id,
     quadrant: quadrant.label as QuadrantName,
     ring: ring.label as RingName,
     moved: 0,
@@ -35,21 +33,20 @@ function toEntry(
   };
 }
 
-function useRadarEntries(): Entry[] {
-  const sidebarItems = useDocsSidebarItems();
-  const ringsItems = sidebarItems.filter(
+function useRadarEntries(sidebarItems: unknown[]): Entry[] {
+  const ringsItems = sidebarItems?.filter(
     (ringItem) =>
       isSidebarCategory(ringItem) &&
       Object.values(RingName).includes(ringItem.label as RingName)
   ) as SidebarCategory[];
   const entries = ringsItems
-    .filter(isSidebarCategory)
+    // .filter(isSidebarCategory)
     .flatMap((ringItem) =>
       ringItem.items
-        .filter(isSidebarCategory)
+        // .filter(isSidebarCategory)
         .flatMap((quadrantItem) =>
           quadrantItem.items
-            .filter(hasSidebarItemLabel)
+            // .filter(hasSidebarItemLabel)
             .flatMap((item) => toEntry(ringItem, quadrantItem, item))
         )
     );
@@ -57,8 +54,11 @@ function useRadarEntries(): Entry[] {
   return entries;
 }
 
-export function useRadarData(): UseRadarData {
-  const entries = useRadarEntries();
+export function useRadarData(items: unknown[]): UseRadarData | null {
+  if (!items?.length) {
+    return null;
+  }
+  const entries = useRadarEntries(items);
 
   const rings = [
     {

@@ -39,11 +39,10 @@ export function Radar({
   handleEntryClick,
 }: RadarProps) {
   const ref = React.useRef(null);
-  const radarRendered = React.useRef(false);
 
   const formattedEntries = React.useMemo(
     () =>
-      entries.map((entry) => ({
+      entries?.map((entry) => ({
         ...entry,
         ringId: ringMap[entry.ring],
         quadrantId: quadrantMap[entry.quadrant],
@@ -52,11 +51,10 @@ export function Radar({
   );
 
   React.useEffect(() => {
-    if (radarRendered.current) {
+    if (!formattedEntries?.length) {
       return;
     }
     ampli.viewRadar();
-
     radar_visualization({
       ref,
       width: 1450,
@@ -73,15 +71,14 @@ export function Radar({
       handleEntryClick,
       // zoomed_quadrant: 0,
     });
-
-    radarRendered.current = true;
-  }, [ref, radarRendered, entries, rings, quadrants]);
+  }, [ref, entries, rings, quadrants]);
 
   return <svg ref={ref} />;
 }
 
-export function RadarContainer() {
-  const data = useRadarData();
+// eslint-disable-next-line react/prop-types
+export function RadarContainer({ items }) {
+  const data = useRadarData(items);
   const history = useHistory();
 
   return (
@@ -100,7 +97,7 @@ export function RadarContainer() {
             openInNewTab(entry.externalLink);
             return;
           }
-          history.push(entry.slug);
+          history.push(`docs/${entry.slug}`);
         }}
       />
     </div>

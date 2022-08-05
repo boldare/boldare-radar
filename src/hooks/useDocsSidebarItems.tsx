@@ -1,5 +1,3 @@
-import { useDocsSidebar } from "@docusaurus/theme-common";
-
 export interface SidebarLink {
   href: string;
   label: string;
@@ -17,8 +15,4 @@ export function hasSidebarItemLabel(value: any): value is SidebarLink {
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function isSidebarCategory(value: any): value is SidebarCategory {
   return value?.label && value?.items?.every(hasSidebarItemLabel);
-}
-
-export function useDocsSidebarItems() {
-  return useDocsSidebar()?.items || [];
 }

@@ -1,6 +1,5 @@
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import * as React from "react";
-import { useEffect } from "react";
 import { ampli } from "../ampli";
 import { Login } from "../components/Login";
 import { useGoogleAuth } from "../hooks/useGoogleAuth";
