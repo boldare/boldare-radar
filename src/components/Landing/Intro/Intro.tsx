@@ -16,12 +16,14 @@ export default function Intro() {
         <div className={"intro__description"}>
           <h1 className={"intro__title"}>
             <span className={"intro__title-top"}>
-              Boldare's
-              <img
-                src={"img/arrow.svg"}
-                alt={"arrow"}
-                className={"intro__arrow"}
-              />
+              <span className={"intro__title-top-text"}>
+                Boldare's
+                <img
+                  src={"img/arrow.svg"}
+                  alt={"arrow"}
+                  className={"intro__arrow"}
+                />
+              </span>
             </span>
             <span className={"intro__title-bottom"}>
               <img

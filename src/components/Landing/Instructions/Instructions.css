@@ -53,3 +53,19 @@
   bottom: 60px;
   left: 0;
 }
+
+@media only screen and (max-width: 992px) {
+  .instructions {
+    padding-top: 0;
+    padding-bottom: 50px;
+  }
+
+  .instructions__list {
+    flex-direction: column;
+  }
+
+  .instructions__list-item {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+}

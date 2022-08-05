@@ -33,6 +33,10 @@
   position: relative;
 }
 
+.intro__title-top-text {
+  position: relative;
+}
+
 .intro__title-bottom-text {
   position: absolute;
   top: 0;
@@ -61,12 +65,54 @@
 
 .intro__arrow {
   position: absolute;
-  top: -3rem;
-  right: -10rem;
+  top: -48px;
+  right: -160px;
 }
 
 .intro__scribble {
   position: relative;
   top: 5px;
   left: -30px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro__title {
+    font-size: 5.2rem;
+  }
+
+  .intro__title-top,
+  .intro__title-bottom {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .intro {
+    padding-top: 30px;
+    padding-bottom: 60px;
+  }
+
+  .intro__img-box,
+  .intro__description {
+    width: 100%;
+  }
+
+  .intro__img-box {
+    display: none;
+  }
+
+  .intro__title {
+    font-size: 3rem;
+  }
+
+  .intro__arrow {
+    right: -100px;
+    max-width: 70px;
+  }
+
+  .intro__scribble {
+    top: -10px;
+    left: -30px;
+    max-width: 330px;
+  }
 }

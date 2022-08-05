@@ -7,7 +7,7 @@ import Instructions from "../components/Landing/Instructions/Instructions";
 
 export default function Home(): JSX.Element {
   return (
-    <div>
+    <div style={{ overflow: "auto" }}>
       <Menu />
       <Intro />
       <ReadMore />
