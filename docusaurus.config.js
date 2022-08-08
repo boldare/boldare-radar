@@ -31,6 +31,24 @@ const config = {
           editUrl: "https://github.com/boldare/boldare-radar/edit/main",
           showLastUpdateAuthor: true,
           showLastUpdateTime: true,
+          async sidebarItemsGenerator({
+            defaultSidebarItemsGenerator,
+            ...args
+          }) {
+            const { docs } = args;
+            const newDocs = docs.map((item) => ({
+              ...item,
+              frontMatter: { ...item.frontMatter, sidebar_label: item.title },
+            }));
+            const sidebarItems = await defaultSidebarItemsGenerator({
+              ...args,
+              docs: [...newDocs],
+            });
+
+            config.customFields.sidebarItems = sidebarItems;
+
+            return sidebarItems;
+          },
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
