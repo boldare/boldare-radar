@@ -1,5 +1,6 @@
 import { Entry, Quadrant, QuadrantName, Ring, RingName } from "../models/radar";
 import {
+  hasSidebarItemLabel,
   isSidebarCategory,
   SidebarCategory,
   SidebarLink,
@@ -39,17 +40,16 @@ function useRadarEntries(sidebarItems: unknown[]): Entry[] {
       isSidebarCategory(ringItem) &&
       Object.values(RingName).includes(ringItem.label as RingName)
   ) as SidebarCategory[];
-  const entries = ringsItems
-    // .filter(isSidebarCategory)
-    .flatMap((ringItem) =>
-      ringItem.items
-        // .filter(isSidebarCategory)
-        .flatMap((quadrantItem) =>
-          quadrantItem.items
-            // .filter(hasSidebarItemLabel)
-            .flatMap((item) => toEntry(ringItem, quadrantItem, item))
-        )
-    );
+
+  const entries = ringsItems.flatMap((ringItem) =>
+    ringItem.items
+      .filter(isSidebarCategory)
+      .flatMap((quadrantItem) =>
+        quadrantItem.items
+          .filter(hasSidebarItemLabel)
+          .flatMap((item) => toEntry(ringItem, quadrantItem, item))
+      )
+  );
 
   return entries;
 }
