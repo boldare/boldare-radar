@@ -40,6 +40,9 @@ interface Config {
 }
 
 export function radar_visualization(config: Config) {
+  if (!config.entries?.length) {
+    return;
+  }
   // custom random number generator, to make random sequence reproducible
   // source: https://stackoverflow.com/questions/521295
   var seed = 42;

@@ -33,6 +33,7 @@ module.exports = {
         caughtErrorsIgnorePattern: "^_",
       },
     ],
+    "react/no-unescaped-entities": "off",
   },
   settings: {
     react: {

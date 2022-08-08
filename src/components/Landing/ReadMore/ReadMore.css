@@ -1,0 +1,29 @@
+.read-more {
+  background-color: #f68282;
+  color: #fff;
+  padding-top: 45px;
+  padding-bottom: 50px;
+}
+
+.read-more__title {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 0;
+}
+
+.read-more__title-highlighted {
+  position: relative;
+}
+
+.read-more__title-highlighted-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.read-more__scribble {
+  max-width: 250px;
+  position: relative;
+  top: 5px;
+  left: -10px;
+}
