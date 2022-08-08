@@ -82,7 +82,7 @@ export function RadarContainer({ items }) {
   const history = useHistory();
 
   return (
-    <div style={{ overflow: "auto" }}>
+    <div style={{ overflow: "auto", backgroundColor: "#fff" }}>
       {!!data && (
         <Radar
           {...data}
