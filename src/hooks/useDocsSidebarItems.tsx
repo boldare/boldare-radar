@@ -1,6 +1,7 @@
 export interface SidebarLink {
   href: string;
   label: string;
+  id: string;
 }
 
 export interface SidebarCategory extends SidebarLink {

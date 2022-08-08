@@ -31,6 +31,7 @@ function toEntry(
     ring: ring.label as RingName,
     moved: 0,
     active: true,
+    externalLink: "",
   };
 }
 

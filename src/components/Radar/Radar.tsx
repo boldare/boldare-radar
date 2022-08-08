@@ -83,23 +83,25 @@ export function RadarContainer({ items }) {
 
   return (
     <div style={{ overflow: "auto" }}>
-      <Radar
-        {...data}
-        handleEntryClick={(entry) => {
-          if (entry?.label) {
-            ampli.openItem({
-              itemName: entry.label,
-              itemQuadrant: entry.quadrant,
-              itemRing: entry.ring,
-            });
-          }
-          if (entry?.externalLink) {
-            openInNewTab(entry.externalLink);
-            return;
-          }
-          history.push(`docs/${entry.slug}`);
-        }}
-      />
+      {!!data && (
+        <Radar
+          {...data}
+          handleEntryClick={(entry) => {
+            if (entry?.label) {
+              ampli.openItem({
+                itemName: entry.label,
+                itemQuadrant: entry.quadrant,
+                itemRing: entry.ring,
+              });
+            }
+            if (entry?.externalLink) {
+              openInNewTab(entry.externalLink);
+              return;
+            }
+            history.push(`docs/${entry.slug}`);
+          }}
+        />
+      )}
     </div>
   );
 }
