@@ -76,12 +76,6 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "tech/radar",
-            position: "left",
-            label: "Tech",
-          },
-          {
             href: "https://github.com/boldare/boldare-radar",
             label: "GitHub",
             position: "right",
