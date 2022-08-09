@@ -11,7 +11,7 @@ const config = {
   tagline: "Boldare Radar",
   url: "https://boldare.com",
   baseUrl: "/",
-  onBrokenLinks: "throw",
+  onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/icon.png",
   i18n: {
@@ -76,12 +76,6 @@ const config = {
         },
         items: [
           {
-            type: "doc",
-            docId: "tech/radar",
-            position: "left",
-            label: "Tech",
-          },
-          {
             href: "https://github.com/boldare/boldare-radar",
             label: "GitHub",
             position: "right",
@@ -104,7 +98,7 @@ const config = {
               },
               {
                 label: "Product Market Fit",
-                to: "/docs/category/pmf",
+                to: "/docs/category/product-market-fit",
               },
               {
                 label: "Scaling",
