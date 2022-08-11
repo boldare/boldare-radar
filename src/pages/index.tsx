@@ -7,6 +7,12 @@ import Instructions from "../components/Landing/Instructions/Instructions";
 import Footer from "../components/Landing/Footer/Footer";
 
 export default function Home(): JSX.Element {
+  if (
+    typeof window !== "undefined" &&
+    window.location.pathname === "/tech-radar"
+  ) {
+    window.location.replace("/tech-radar/");
+  }
   return (
     <div style={{ overflow: "auto" }}>
       <Menu />
