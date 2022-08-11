@@ -10,7 +10,7 @@ const config = {
   title: "Boldare Radar",
   tagline: "Boldare Radar",
   url: "https://*",
-  baseUrl: "/tech-radar/",
+  baseUrl: "/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/icon.png",
