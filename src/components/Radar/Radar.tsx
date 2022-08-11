@@ -39,6 +39,7 @@ export function Radar({
   handleEntryClick,
 }: RadarProps) {
   const ref = React.useRef(null);
+  const radarRendered = React.useRef(false);
 
   const formattedEntries = React.useMemo(
     () =>
@@ -51,11 +52,11 @@ export function Radar({
   );
 
   React.useEffect(() => {
-    if (!formattedEntries?.length) {
+    if (!formattedEntries?.length || radarRendered.current) {
       return;
     }
     ampli.viewRadar();
-    radar_visualization({
+    radarRendered.current = radar_visualization({
       ref,
       width: 1450,
       height: 1000,
