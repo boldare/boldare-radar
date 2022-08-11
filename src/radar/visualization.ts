@@ -39,9 +39,9 @@ interface Config {
   handleEntryClick: (entry: any) => void;
 }
 
-export function radar_visualization(config: Config) {
+export function radar_visualization(config: Config): boolean {
   if (!config.entries?.length) {
-    return;
+    return false;
   }
   // custom random number generator, to make random sequence reproducible
   // source: https://stackoverflow.com/questions/521295
@@ -516,4 +516,6 @@ export function radar_visualization(config: Config) {
     .velocityDecay(0.19) // magic number (found by experimentation)
     .force("collision", d3.forceCollide().radius(12).strength(0.85))
     .on("tick", ticked);
+
+  return true;
 }
