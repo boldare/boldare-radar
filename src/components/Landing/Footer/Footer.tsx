@@ -169,7 +169,7 @@ export default function Footer() {
         <div
           className={"footer-landing__top-quarter footer-landing__top-career"}
         >
-          <img src={"img//career.webp"} alt={"Boldare Career"} />
+          <img src={"img/career.webp"} alt={"Boldare Career"} />
           <div className={"footer-landing__top-content"}>
             <h3 className={"footer-landing__top-heading"}>Join our Team</h3>
             <a
@@ -248,12 +248,6 @@ export default function Footer() {
         >
           <img src={"img/contact.webp"} alt={"Boldare Newsletter"} />
           <div className={"footer-landing__top-content"}>
-            <a
-              href={"https://www.boldare.com/newsletter/"}
-              className={"footer-landing__top-newsletter-subscribe"}
-            >
-              Subscribe to our newsletter &#8594;
-            </a>
             <div className={"footer-landing__top-sm"}>
               <a
                 href={"https://www.facebook.com/boldarecom/"}

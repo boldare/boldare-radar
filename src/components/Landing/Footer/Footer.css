@@ -219,23 +219,10 @@
   flex-direction: column;
 }
 
-.footer-landing__top-newsletter-subscribe {
-  display: flex;
-  font-size: 22px;
-  color: #000;
-  text-decoration: underline;
-  font-weight: 700;
-}
-
-.footer-landing__top-newsletter-subscribe:hover {
-  color: #000;
-}
-
 .footer-landing__top-newsletter .footer-landing__top-sm {
   display: flex;
   justify-content: flex-start;
   width: 100%;
-  margin-top: 10px;
   flex-direction: row;
   flex-wrap: wrap;
 }
@@ -255,7 +242,7 @@
   box-shadow: -2px 2px 0 0 #000;
   display: flex;
   justify-content: center;
-  margin-right: 30px;
+  margin: 2px 30px 2px 2px;
 }
 
 .footer-landing__top-icon-svg-wrapper {
