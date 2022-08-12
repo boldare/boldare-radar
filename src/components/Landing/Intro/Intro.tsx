@@ -27,7 +27,7 @@ export default function Intro() {
             </span>
             <span className={"intro__title-bottom"}>
               <img
-                src={"img/scribble-white.svg"}
+                src={"img/scribble.svg"}
                 alt={"scribble"}
                 className={"intro__scribble"}
               />

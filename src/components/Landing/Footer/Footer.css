@@ -25,15 +25,16 @@
   width: 100%;
   display: flex;
   align-items: center;
-  height: 120px;
+  height: auto;
   position: relative;
-  padding-right: 50px;
-  padding-left: 50px;
+  padding: 25px;
 }
 
 @media screen and (min-width: 768px) {
   .footer-landing__top-quarter {
     width: 50%;
+    height: 120px;
+    padding: 0 50px;
   }
 }
 
@@ -103,9 +104,16 @@
 }
 
 .footer-landing__top-content h3 {
-  font-size: 32px;
-  margin: 0;
+  font-size: 22px;
+  margin: 0 0 10px;
   color: #000;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-landing__top-content h3 {
+    font-size: 32px;
+    margin: 0;
+  }
 }
 
 .footer-landing__top-career h3 {
@@ -193,10 +201,16 @@
 }
 
 .footer-landing__top-bldr  .footer-landing__top-contact {
-  font-size: 22px;
+  font-size: 16px;
   line-height: 1.4;
   max-width: 60%;
   margin-bottom: 0;
+}
+
+@media screen and (min-width: 992px) {
+  .footer-landing__top-bldr  .footer-landing__top-contact {
+    font-size: 22px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -242,7 +256,13 @@
   box-shadow: -2px 2px 0 0 #000;
   display: flex;
   justify-content: center;
-  margin: 2px 30px 2px 2px;
+  margin: 5px 15px 5px 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-landing__top-newsletter .footer-landing__top-sm a {
+    margin-right: 30px;
+  }
 }
 
 .footer-landing__top-icon-svg-wrapper {
@@ -254,7 +274,7 @@
 }
 
 .footer-landing__bottom {
-  padding: 50px;
+  padding: 50px 50px 25px;
 }
 
 @media screen and (min-width: 992px) {
@@ -280,36 +300,77 @@
 
 .footer-landing__bottom-links {
   display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-links {
+    flex-direction: row;
+  }
 }
 
 .footer-landing__bottom-menu,
 .footer-landing__bottom-info {
   display: flex;
-  width: 50%;
+  flex-direction: column;
+  width: 100%;
+
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-menu {
+    flex-direction: row;
+    width: 50%;
+  }
 }
 
 .footer-landing__bottom-menu-column {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-menu-column {
+    width: 50%;
+  }
 }
 
 .footer-landing__bottom-info {
   display: flex;
   flex-direction: column;
+  width: 100%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-info {
+    width: 50%;
+  }
 }
 
 .footer-landing__bottom-info-places {
   display: flex;
   flex-wrap: wrap;
-  margin: 40px 0;
+  margin: 20px 0 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-info-places {
+    margin: 40px 0;
+  }
 }
 
 .footer-landing__bottom-info-places-item {
   display: flex;
   flex-direction: column;
-  width: 33.33%;
+  width: 50%;
   margin: 15px 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-info-places-item {
+    width: 33.33%;
+  }
 }
 
 .footer-landing__bottom-info-places-item-title {
@@ -322,24 +383,53 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-info-badges {
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+  }
 }
 
 .footer-landing__bottom-info-badges a {
-  margin-bottom: 0;
-  width: 23%;
+  margin-bottom: 20px;
+  width: 47%;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-info-badges a {
+    margin-bottom: 0;
+    width: 23%;
+  }
 }
 
 .footer-landing__bottom-info-badges a img {
   filter: grayscale(1);
-  max-height: 100px;
+  max-height: 80px;
+  margin: 0 auto;
+  display: block;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-info-badges a img {
+    max-height: 100px;
+  }
 }
 
 .footer-landing__bottom-copyrights {
   width: 100%;
-  text-align: right;
-  font-size: 14px;
+  font-size: 12px;
   margin-bottom: 0;
+}
 
+@media only screen and (min-width: 768px) {
+  .footer-landing__bottom-copyrights {
+    text-align: right;
+    font-size: 14px;
+  }
 }
 
 .footer-landing__bottom-link {
@@ -359,8 +449,3 @@
   padding-bottom: 25px;
 }
 
-@media only screen and (max-width: 768px) {
-  .footer-landing__top-quarter {
-    width: 100%;
-  }
-}
