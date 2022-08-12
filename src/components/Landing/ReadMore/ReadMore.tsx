@@ -10,7 +10,7 @@ export default function ReadMore() {
           To read more about each technology, click its name&nbsp;
           <span className={"read-more__title-highlighted"}>
             <img
-              src={"img/scribble-black.svg"}
+              src={"img/scribble-small.svg"}
               alt={"scribble"}
               className={"read-more__scribble"}
             />

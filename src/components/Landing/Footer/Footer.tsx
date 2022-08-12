@@ -53,7 +53,7 @@ export default function Footer() {
     (footerNavServicesItem) => (
       <a
         href={"https://www.boldare.com/services/" + footerNavServicesItem.url}
-        className={"footer-landing__bottom-link"}
+        className={"footer-landing__bottom-link hide-mobile"}
         key={footerNavServicesItem.label}
       >
         {footerNavServicesItem.label}
