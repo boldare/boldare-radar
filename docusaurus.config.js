@@ -9,7 +9,7 @@ require("dotenv").config();
 const config = {
   title: "Boldare Radar",
   tagline: "Boldare Radar",
-  url: "https://boldare.com",
+  url: "https://www.boldare.com",
   baseUrl: "/tech-radar/",
   onBrokenLinks: "warn",
   onBrokenMarkdownLinks: "warn",
