@@ -1,8 +1,11 @@
+import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import React, { useState } from "react";
 
 import "./Menu.css";
 
 export default function Menu() {
+  const { siteConfig } = useDocusaurusContext();
+
   const navData = [
     {
       label: "What?",
@@ -33,11 +36,13 @@ export default function Menu() {
   return (
     <div className={"menu-landing"}>
       <div className={"container menu-landing__container"}>
-        <img
-          src={"img/logo-boldare.svg"}
-          alt={"Boldare logo"}
-          className={"menu-landing__logo"}
-        />
+        <a href={siteConfig.url}>
+          <img
+            src={"img/logo-boldare.svg"}
+            alt={"Boldare logo"}
+            className={"menu-landing__logo"}
+          />
+        </a>
         <nav className={"menu-landing__nav"}>
           <div className={"menu-landing__nav-desktop"}>{navItems}</div>
           <div
