@@ -1,14 +1,14 @@
 # Netlify CMS
 
-Netlify CMS is a Content Management System for static site generators, giving non-technical users a simple way to edit and add content to any site built with a static site generator.
+Netlify CMS is a Content Management System for static site generators. It gives non-technical users a simple way to edit and add content to any previously built site.
 
 ## ➕ Benefits
 
 * Seemless creation of new pages
-* Integratable with Netlify ecosystem
 * Open-source with active community
 * Editor-friendly user interface
 * Intuitive workflow for content teams
+* Integratable with Netlify ecosystem
 
 ## ➖ Drawbacks
 
