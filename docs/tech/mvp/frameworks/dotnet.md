@@ -13,7 +13,9 @@ It features a rich standard library which covers most of the use cases. For ever
 * ...even in the browser via WebAssembly
 * .NET is open-source
 * You can use C#, F#, VB.NET or any [other supported language](https://en.wikipedia.org/wiki/List_of_CLI_languages)
-* ...realistically though, use C#
+* C# and F# are the most prominent and actively developed, though
+* You won't find yourselves running into dependency hell - the standard library covers most, if not all, of the needs of any project
+* Rich toolset that helps you build .NET apps - code fixers/analysers, scaffolding of database models, REPLs, code generators - all readily available to assist you
 
 ## ➖ When not to use
 
