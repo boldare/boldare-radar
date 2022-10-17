@@ -2,7 +2,7 @@
 
 ## 👀 TLDR;
 
-[.NET](https://dot.net) is a framework for writing _any_ type of application, including, but not limited to, console apps, mobile apps (with MAUI) web APIs (with ASP.NET Core), games (with Unity3D) and machine learning models (with ML.NET).
+[.NET](https://dot.net) is a framework for writing _any_ type of application, including, but not limited to, console apps, mobile and desktop apps (with MAUI) web APIs (with ASP.NET Core), games (with Unity, Godot, MonoGame) and machine learning models (with ML.NET).
 
 It features a rich standard library which covers most of the use cases. For everything else there's NuGet - .NET's dependency manager and package repository with over 300k unique packages to choose from.
 
