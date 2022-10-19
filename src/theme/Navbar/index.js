@@ -6,11 +6,9 @@ export default function NavbarWrapper(props) {
   return (
     <BrowserOnly>
       {() => {
-        return window.location.pathname === "/tech-radar/" ? (
-          <></>
-        ) : (
-          <Navbar {...props} />
-        );
+        if (window.location.pathname !== "/tech-radar/") {
+          return <Navbar {...props}></Navbar>;
+        }
       }}
     </BrowserOnly>
   );
